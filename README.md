@@ -54,12 +54,14 @@ Explain how to use the project with examples or screenshots, if needed.
 
 ## 🤝 Contribuição / Contribution
 
+### Em português
 1. Faça um fork do projeto.
 2. Crie uma branch para sua funcionalidade (`git checkout -b minha-feature`).
 3. Faça commit das suas alterações (`git commit -m 'Adiciona minha feature'`).
 4. Faça push para a branch (`git push origin minha-feature`).
 5. Abra um Pull Request.
 
+### In English
 1. Fork the project.
 2. Create a branch for your feature (`git checkout -b my-feature`).
 3. Commit your changes (`git commit -m 'Add my feature'`).
