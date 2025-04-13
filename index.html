@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="images/LOGO.png">
+
+    <title>RoyalStay</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <img src="/images/LOGO.png" alt="Logo RoyalStay">
+                    <a href="index.html"></a>
+                </li>
+                <li>
+                    <input type="checkbox" id="dropdown-toggle" hidden>
+
+                    <label for="dropdown-toggle">
+                        <img class="avatar" src="/images/avatars/generic_avatar.png" alt="Menu">
+                    </label>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="#">ENTRAR</a></li>
+                        <li><a href="#">CADASTRAR</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <form action="" method="post">
+            <div>
+                <label for="city">CIDADE</label>
+                <select name="city">
+                    <option value=""></option>
+                    <option value="Rio de Janeiro - RJ">Rio de Janeiro - RJ</option>
+                    <option value="São Paulo - SP">São Paulo - SP</option>
+                    <option value="Belo Horizonte - MG">Belo Horizonte - MG</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="price">FAIXA DE PREÇO</label>
+                <input type="number" name="price">
+            </div>
+
+            <div>
+                <input type="checkbox" id="filters" hidden>
+
+                <label for="filters">
+                    <img src="images/icons/plus_circle.png" alt="Botão de abrir mais filtros">
+                    FILTROS
+                </label>
+            </div>
+
+            <button type="submit">
+                <img src="images/icons/white_filter.png" alt="Botão de filtrar quartos">
+                <img src="images/icons/blue_filter.png" alt="Botão de filtrar quartos" hidden>
+                <span hidden>FILTRAR RESERVAS</span>
+            </button>
+        </form>
+    </section>
+
+    <section>
+        <h1>Reservas Famosas</h1>
+        <ul>
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto1.png" alt="Imagem da Suíte Refúgio Tropical">
+                    <h2>Suíte Refúgio Tropical</h2>
+                    <p>Relaxe em meio à natureza nesta charmosa suíte com decoração rústico-contemporânea, cama
+                        king-size,
+                        varanda com vista para o jardim e iluminação natural abundante. Ideal para casais que buscam
+                        conforto, privacidade e uma experiência única de conexão com o ambiente tropical.</p>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto2.png" alt="Imagem da Suíte Horizonte Azul">
+                    <h2>Suíte Horizonte Azul</h2>
+                    <p>Elegante e confortável, esta suíte com duas camas de solteiro é perfeita para amigos ou colegas
+                        de
+                        viagem. Com decoração moderna em tons de azul, sofá aconchegante e iluminação suave, oferece um
+                        ambiente relaxante e sofisticado. Destaque para o painel artístico panorâmico que traz a
+                        tranquilidade do mar para dentro do quarto.</p>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto3.png" alt="Imagem da Suíte Elegância Moderna">
+                    <h2>Suíte Elegância Moderna</h2>
+                    <p>Com um design clean e sofisticado, esta suíte com duas camas de solteiro oferece conforto e
+                        estilo em
+                        cada detalhe. Os painéis verticais em azul profundo criam um visual imponente, enquanto a
+                        iluminação
+                        indireta e o tapete persa trazem um toque de suavidade e luxo. Ideal para quem busca
+                        tranquilidade
+                        em um ambiente contemporâneo e acolhedor.</p>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto4.png" alt="Imagem da Suíte Montanha Serena">
+                    <h2>Suíte Montanha Serena</h2>
+                    <p>Inspirada nas paisagens naturais e na harmonia dos tons terrosos, esta suíte oferece aconchego e
+                        estilo em perfeita sintonia. Com cama queen-size, decoração minimalista e detalhes artísticos
+                        nas
+                        paredes e no piso, é o refúgio ideal para quem busca descanso em um ambiente moderno e
+                        acolhedor.
+                        Destaque para a iluminação suave e o toque artístico da obra montanhosa sobre a cabeceira.</p>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto5.png" alt="Imagem da Suíte Madeira Nobre">
+                    <h2>Suíte Madeira Nobre</h2>
+                    <p>Com um elegante acabamento em madeira e iluminação quente, esta suíte combina conforto,
+                        sofisticação
+                        e funcionalidade. Equipada com cama king-size, TV de tela plana, estação de café e um espaçoso
+                        banheiro integrado, é perfeita para casais ou viajantes exigentes. Um ambiente acolhedor que
+                        proporciona bem-estar com um toque de luxo contemporâneo.</p>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Últimas Adicionadas</h1>
+        <ul>
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto1.png" alt="Imagem da Suíte Refúgio Tropical">
+                    <h2>Suíte Refúgio Tropical</h2>
+                    <p>Relaxe em meio à natureza nesta charmosa suíte com decoração rústico-contemporânea, cama
+                        king-size,
+                        varanda com vista para o jardim e iluminação natural abundante. Ideal para casais que buscam
+                        conforto, privacidade e uma experiência única de conexão com o ambiente tropical.</p>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto2.png" alt="Imagem da Suíte Horizonte Azul">
+                    <h2>Suíte Horizonte Azul</h2>
+                    <p>Elegante e confortável, esta suíte com duas camas de solteiro é perfeita para amigos ou colegas
+                        de
+                        viagem. Com decoração moderna em tons de azul, sofá aconchegante e iluminação suave, oferece um
+                        ambiente relaxante e sofisticado. Destaque para o painel artístico panorâmico que traz a
+                        tranquilidade do mar para dentro do quarto.</p>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto3.png" alt="Imagem da Suíte Elegância Moderna">
+                    <h2>Suíte Elegância Moderna</h2>
+                    <p>Com um design clean e sofisticado, esta suíte com duas camas de solteiro oferece conforto e
+                        estilo em
+                        cada detalhe. Os painéis verticais em azul profundo criam um visual imponente, enquanto a
+                        iluminação
+                        indireta e o tapete persa trazem um toque de suavidade e luxo. Ideal para quem busca
+                        tranquilidade
+                        em um ambiente contemporâneo e acolhedor.</p>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto4.png" alt="Imagem da Suíte Montanha Serena">
+                    <h2>Suíte Montanha Serena</h2>
+                    <p>Inspirada nas paisagens naturais e na harmonia dos tons terrosos, esta suíte oferece aconchego e
+                        estilo em perfeita sintonia. Com cama queen-size, decoração minimalista e detalhes artísticos
+                        nas
+                        paredes e no piso, é o refúgio ideal para quem busca descanso em um ambiente moderno e
+                        acolhedor.
+                        Destaque para a iluminação suave e o toque artístico da obra montanhosa sobre a cabeceira.</p>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto5.png" alt="Imagem da Suíte Madeira Nobre">
+                    <h2>Suíte Madeira Nobre</h2>
+                    <p>Com um elegante acabamento em madeira e iluminação quente, esta suíte combina conforto,
+                        sofisticação
+                        e funcionalidade. Equipada com cama king-size, TV de tela plana, estação de café e um espaçoso
+                        banheiro integrado, é perfeita para casais ou viajantes exigentes. Um ambiente acolhedor que
+                        proporciona bem-estar com um toque de luxo contemporâneo.</p>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h1>Melhor Custo Benefício</h1>
+        <ul>
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto1.png" alt="Imagem da Suíte Refúgio Tropical">
+                    <h2>Suíte Refúgio Tropical</h2>
+                    <p>Relaxe em meio à natureza nesta charmosa suíte com decoração rústico-contemporânea, cama
+                        king-size,
+                        varanda com vista para o jardim e iluminação natural abundante. Ideal para casais que buscam
+                        conforto, privacidade e uma experiência única de conexão com o ambiente tropical.</p>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto2.png" alt="Imagem da Suíte Horizonte Azul">
+                    <h2>Suíte Horizonte Azul</h2>
+                    <p>Elegante e confortável, esta suíte com duas camas de solteiro é perfeita para amigos ou colegas
+                        de
+                        viagem. Com decoração moderna em tons de azul, sofá aconchegante e iluminação suave, oferece um
+                        ambiente relaxante e sofisticado. Destaque para o painel artístico panorâmico que traz a
+                        tranquilidade do mar para dentro do quarto.</p>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto3.png" alt="Imagem da Suíte Elegância Moderna">
+                    <h2>Suíte Elegância Moderna</h2>
+                    <p>Com um design clean e sofisticado, esta suíte com duas camas de solteiro oferece conforto e
+                        estilo em
+                        cada detalhe. Os painéis verticais em azul profundo criam um visual imponente, enquanto a
+                        iluminação
+                        indireta e o tapete persa trazem um toque de suavidade e luxo. Ideal para quem busca
+                        tranquilidade
+                        em um ambiente contemporâneo e acolhedor.</p>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto4.png" alt="Imagem da Suíte Montanha Serena">
+                    <h2>Suíte Montanha Serena</h2>
+                    <p>Inspirada nas paisagens naturais e na harmonia dos tons terrosos, esta suíte oferece aconchego e
+                        estilo em perfeita sintonia. Com cama queen-size, decoração minimalista e detalhes artísticos
+                        nas
+                        paredes e no piso, é o refúgio ideal para quem busca descanso em um ambiente moderno e
+                        acolhedor.
+                        Destaque para a iluminação suave e o toque artístico da obra montanhosa sobre a cabeceira.</p>
+                </article>
+            </li>
+
+            <li>
+                <article>
+                    <img src="images/bedrooms/quarto5.png" alt="Imagem da Suíte Madeira Nobre">
+                    <h2>Suíte Madeira Nobre</h2>
+                    <p>Com um elegante acabamento em madeira e iluminação quente, esta suíte combina conforto,
+                        sofisticação
+                        e funcionalidade. Equipada com cama king-size, TV de tela plana, estação de café e um espaçoso
+                        banheiro integrado, é perfeita para casais ou viajantes exigentes. Um ambiente acolhedor que
+                        proporciona bem-estar com um toque de luxo contemporâneo.</p>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <small>RoyalStay</small>
+        <small>&copy; 2025 - Todos os direitos reservados</small>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Newsletter</a>
+                </li>
+                <li>
+                    <a href="#">Quem Somos</a>
+                </li>
+
+                <li>
+                    <a href="#">Central de Atendimento</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Uso</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Parceria</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Privacidade</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Cancelamento</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Inativação</a>
+                </li>
+            </ul>
+        </nav>
+
+        <dl>
+            <dt>Horário de Atendimento</dt>
+            <dd>De segunda à sexta, das <time datetime="08:30">8h30</time> às <time datetime="18:00">18h</time></dd>
+        </dl>
+
+        <p><small>DESENVOLVIDO POR LAVÍNIA MONTEIRO &amp; WASLENY PIMENTA</small></p>
+    </footer>
+</body>
+
+</html>

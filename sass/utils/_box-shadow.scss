@@ -1,0 +1,6 @@
+@use "../base/colors" as colors;
+
+
+@mixin box-shadow {
+  box-shadow: 4px 6px 6px colors.$black-transparent-25;
+}
