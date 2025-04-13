@@ -1,0 +1,103 @@
+@use "../base/colors" as colors;
+@use "../utils/card" as *;
+
+section:not(:first-of-type) {
+  text-align: center;
+  width: 100%;
+  margin: 0 0 5rem;
+
+  ul {
+    display: flex;
+    width: 100%;
+    margin-top: 3rem;
+
+    li {
+      @include card-carousel;
+
+      height: auto;
+      width: 20%;
+      opacity: 1;
+      z-index: 1;
+      transform: none;
+
+      article {
+        img {
+          width: 80%;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+          font-weight: bold;
+        }
+
+        p {
+          font-size: 1rem;
+          margin-top: 0.5rem;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          line-clamp: 3;
+        }
+      }
+
+      @media (width >= 800px) {
+        &:nth-child(1),
+        &:nth-child(5) {
+          opacity: 0.5;
+          transform: scale(1);
+          z-index: 0;
+        }
+
+        &:nth-child(2),
+        &:nth-child(4) {
+          opacity: 0.75;
+          transform: scale(1.1);
+          z-index: 1;
+        }
+
+        &:nth-child(3) {
+          opacity: 1;
+          transform: scale(1.2);
+          z-index: 2;
+        }
+      }
+    }
+  }
+}
+
+@media (width < 800px) {
+  section:not(:first-of-type) {
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      gap: 1rem;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      li {
+        flex: 0 0 100%;
+        scroll-snap-align: center;
+
+        article {
+          height: 100%;
+
+          p {
+            -webkit-line-clamp: 4;
+            line-clamp: 4;
+          }
+        }
+      }
+    }
+  }
+}

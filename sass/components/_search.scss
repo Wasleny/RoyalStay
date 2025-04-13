@@ -1,0 +1,83 @@
+@use "../base/colors" as colors;
+
+form {
+  display: block;
+
+  div {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    select,
+    input {
+      width: 60%;
+      height: 2rem;
+      border: 1px solid colors.$white;
+      border-radius: 10px;
+      background-color: colors.$white;
+      outline: none;
+    }
+
+    &:last-of-type label {
+      cursor: pointer;
+    }
+
+    img {
+      height: 0.875rem;
+    }
+  }
+
+  @media (width >= 800px) {
+    display: flex;
+
+    div {
+      width: 40%;
+      height: 3rem;
+      margin-left: 1.5em;
+      margin-bottom: 0;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+
+      label {
+        margin-right: 0.5rem;
+      }
+
+      select,
+      input {
+        height: 90%;
+        width: 70%;
+      }
+    }
+  }
+
+  button {
+    @media (width < 800px) {
+      width: 100%;
+
+      span {
+        display: block;
+      }
+
+      img {
+        display: none;
+      }
+    }
+
+    &:hover {
+      background-color: colors.$off-white;
+      color: colors.$navy-blue;
+
+      @media (width >= 800px) {
+        img:first-of-type {
+          display: none;
+        }
+
+        img:last-of-type {
+          display: block;
+        }
+      }
+    }
+  }
+}
