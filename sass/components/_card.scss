@@ -1,5 +1,5 @@
 @use "../base/colors" as colors;
-@use "box-shadow" as *;
+@use "../utils/box-shadow" as *;
 
 @mixin card {
     @include box-shadow;
