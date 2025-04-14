@@ -1,0 +1,53 @@
+@use "../base/colors" as colors;
+@use "../components/card" as *;
+@use "../utils/margin" as *;
+
+section > div {
+  @include margin;
+
+  @media(width < 800px) {
+    margin: 0;;
+  }
+
+  display: grid;
+  gap: 2.5rem;
+  grid-template-columns: 1fr;
+
+  @media (width > 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (width > 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  article {
+    @include card;
+
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    img {
+      width: 100%;
+    }
+
+    p:first-of-type {
+      color: colors.$burgundy;
+      font-weight: bold;
+    }
+
+    p:not(:first-of-type) {
+        text-align: justify;
+    }
+
+    a {
+        text-decoration: underline;
+        color: colors.$caramel;
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+  }
+}

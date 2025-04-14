@@ -1,0 +1,28 @@
+@use "../base/colors" as colors;
+@use "../utils/box-shadow" as *;
+@use "../utils/margin" as *;
+
+@mixin card {
+    @include box-shadow;
+
+    padding: 1.25rem 0.75rem;
+    background-color: colors.$off-white;
+}
+
+@mixin flat-card {
+    @include card;
+    @include margin;
+}
+
+@mixin card-rounded {
+    @include flat-card;
+
+    border-radius: 0.625rem;
+}
+
+@mixin card-carousel {
+    @include card;
+
+    border: 1px solid colors.$caramel;
+}
+
