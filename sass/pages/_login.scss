@@ -1,0 +1,41 @@
+@use "../base/colors" as colors;
+@use "../utils/card" as *;
+
+.login {
+  @include card;
+
+  width: 40%;
+  margin: 1.9rem auto;
+  border-radius: 0.625rem;
+
+  form {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+
+    div {
+      width: auto;
+      margin-top: 2rem;
+      justify-content: space-between;
+    }
+
+    button {
+      margin: 2rem 0 0 auto;
+    }
+  }
+}
+
+@media (width < 800px) {
+  .login {
+    @include card;
+
+    width: 100%;
+    margin-top: 1.9rem;
+    border-radius: 0;
+
+    form button {
+      margin: 2rem 0 0;
+      width: 100%;
+    }
+  }
+}

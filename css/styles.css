@@ -9,6 +9,7 @@ h1 {
   font-size: 3rem;
   font-weight: bold;
   color: #003459;
+  text-align: center;
 }
 
 p {
@@ -48,21 +49,21 @@ header {
   background-color: #eaeaea;
   padding: 0.25rem 0.75rem;
 }
+header nav img {
+  height: 3.75rem;
+}
 header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header nav img {
-  height: 3.75rem;
+header nav ul li label img {
+  height: 2.5rem;
 }
 header nav label {
   cursor: pointer;
   display: block;
   width: fit-content;
-}
-header nav .avatar {
-  height: 2.5rem;
 }
 header nav .dropdown-menu {
   display: none;
@@ -141,17 +142,23 @@ footer p small {
   font-size: 0.75rem;
 }
 
-form {
+.search {
+  box-shadow: 4px 6px 6px rgba(45, 45, 45, 0.2509803922);
+  padding: 1.25rem 0.75rem;
+  background-color: #eaeaea;
+  margin: 1.9rem 3.75rem;
+}
+.search form {
   display: block;
 }
-form div {
+.search form div {
   width: 100%;
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
 }
-form div select,
-form div input {
+.search form div select,
+.search form div input {
   width: 60%;
   height: 2rem;
   border: 1px solid #fff;
@@ -159,17 +166,17 @@ form div input {
   background-color: #fff;
   outline: none;
 }
-form div:last-of-type label {
+.search form div:last-of-type label {
   cursor: pointer;
 }
-form div img {
+.search form div img {
   height: 0.875rem;
 }
 @media (width >= 800px) {
-  form {
+  .search form {
     display: flex;
   }
-  form div {
+  .search form div {
     width: 40%;
     height: 3rem;
     margin-left: 1.5em;
@@ -178,35 +185,36 @@ form div img {
     justify-content: space-around;
     text-align: center;
   }
-  form div label {
+  .search form div label {
     margin-right: 0.5rem;
   }
-  form div select,
-  form div input {
+  .search form div select,
+  .search form div input {
     height: 90%;
     width: 70%;
   }
 }
 @media (width < 800px) {
-  form button {
+  .search form button {
     width: 100%;
   }
-  form button span {
+  .search form button span {
     display: block;
+    font-weight: 500;
   }
-  form button img {
+  .search form button img {
     display: none;
   }
 }
-form button:hover {
+.search form button:hover {
   background-color: #eaeaea;
   color: #003459;
 }
 @media (width >= 800px) {
-  form button:hover img:first-of-type {
+  .search form button:hover img:first-of-type {
     display: none;
   }
-  form button:hover img:last-of-type {
+  .search form button:hover img:last-of-type {
     display: block;
   }
 }
@@ -222,6 +230,8 @@ button {
   padding: 1.5rem 0.75rem;
   color: #eaeaea;
   background-color: #003459;
+  font-weight: 500;
+  font-size: 1.25rem;
   cursor: pointer;
 }
 button img {
@@ -311,11 +321,56 @@ section:not(:first-of-type) ul li article p {
     line-clamp: 4;
   }
 }
-section:first-of-type {
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div input,
+div select {
+  width: 80%;
+  height: 2.5rem;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background-color: #fff;
+  outline: none;
+}
+
+.login {
   box-shadow: 4px 6px 6px rgba(45, 45, 45, 0.2509803922);
   padding: 1.25rem 0.75rem;
   background-color: #eaeaea;
-  margin: 1.9rem 3.75rem;
+  width: 40%;
+  margin: 1.9rem auto;
+  border-radius: 0.625rem;
+}
+.login form {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+}
+.login form div {
+  width: auto;
+  margin-top: 2rem;
+  justify-content: space-between;
+}
+.login form button {
+  margin: 2rem 0 0 auto;
+}
+
+@media (width < 800px) {
+  .login {
+    box-shadow: 4px 6px 6px rgba(45, 45, 45, 0.2509803922);
+    padding: 1.25rem 0.75rem;
+    background-color: #eaeaea;
+    width: 100%;
+    margin-top: 1.9rem;
+    border-radius: 0;
+  }
+  .login form button {
+    margin: 2rem 0 0;
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

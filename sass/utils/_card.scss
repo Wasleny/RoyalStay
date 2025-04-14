@@ -8,8 +8,14 @@
     background-color: colors.$off-white;
 }
 
-@mixin card-rounded {
+@mixin flat-card {
     @include card;
+    
+    margin: 1.9rem 3.75rem;
+}
+
+@mixin card-rounded {
+    @include flat-card;
 
     border-radius: 0.625rem;
 }
