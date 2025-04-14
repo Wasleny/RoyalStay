@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="images/LOGO.png">
+
+    <title>RoyalStay</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html"><img src="/images/LOGO.png" alt="Logo RoyalStay"></a>
+                </li>
+                <li>
+                    <input type="checkbox" id="dropdown-toggle" hidden>
+
+                    <label for="dropdown-toggle">
+                        <img src="/images/avatars/generic_avatar.png" alt="Menu">
+                    </label>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="/pages/auth/login.html">ENTRAR</a></li>
+                        <li><a href="#">CADASTRAR</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search">
+        <form action="" method="post">
+            <div>
+                <label for="city">CIDADE</label>
+                <input type="text" name="city" value="RIO DE JANEIRO - RIO DE JANEIRO">
+            </div>
+
+            <div>
+                <label for="price">FAIXA DE PREÇO</label>
+                <input type="text" name="price" value="R$ 400,00     -     R$ 600,00">
+            </div>
+
+            <div>
+                <input type="checkbox" id="filters" hidden>
+
+                <label for="filters">
+                    <img src="/images/icons/plus_circle.png" alt="Botão de abrir mais filtros">
+                    FILTROS
+                </label>
+            </div>
+
+            <button type="submit">
+                <img src="/images/icons/white_filter.png" alt="Botão de filtrar quartos">
+                <img src="/images/icons/blue_filter.png" alt="Botão de filtrar quartos" hidden>
+                <span hidden>FILTRAR RESERVAS</span>
+            </button>
+        </form>
+    </section>
+
+    <section>
+        <h1>QUARTOS ENCONTRADOS</h1>
+
+        <div>
+            <article>
+                <img src="/images/bedrooms/quarto6.png" alt="Quarto Suíte Clássica Riviera">
+                <h2>Suíte Clássica Riviera</h2>
+                <p>Diária: R$ 560 / noite</p>
+                <p>Descubra o charme atemporal da Suíte Clássica Riviera — um espaço elegante com acabamento refinado,
+                    ideal
+                    para quem valoriza conforto e bom gosto. Com cama king size, iluminação suave, sofá acolhedor e um
+                    banheiro privativo sofisticado, essa suíte oferece uma experiência relaxante com toque clássico.</p>
+
+                <a href="#">SAIBA MAIS SOBRE ESSE QUARTO</a>
+            </article>
+
+            <article>
+                <img src="/images/bedrooms/quarto7.png" alt="Quarto Suíte Cobre Elegance">
+                <h2>Suíte Cobre Elegance</h2>
+                <p>Diária: R$ 630 / noite</p>
+                <p>Com um toque contemporâneo e elegante, a Suíte Cobre Elegance oferece conforto e sofisticação em cada
+                    detalhe. Destaque para os pendentes metálicos modernos, a iluminação suave e a paleta de cores que
+                    transmite aconchego. Ideal para quem busca uma experiência de hospedagem estilosa e relaxante.</p>
+
+                <a href="#">SAIBA MAIS SOBRE ESSE QUARTO</a>
+            </article>
+
+            <article>
+                <img src="/images/bedrooms/quarto8.png" alt="Quarto Suíte Smart Comfort">
+                <h2>Suíte Smart Comfort</h2>
+                <p>Diária: R$ 420 / noite</p>
+                <p>Ideal para quem busca praticidade e conforto em um ambiente contemporâneo, a Suíte Smart Comfort
+                    conta com decoração minimalista, iluminação acolhedora e espaço funcional. Equipada com sofá de
+                    apoio, estação de trabalho e comodidades modernas, é perfeita para viajantes solo ou a dois.</p>
+
+                <a href="#">SAIBA MAIS SOBRE ESSE QUARTO</a>
+            </article>
+
+            <article>
+                <img src="/images/bedrooms/quarto9.png" alt="Quarto Suíte Garden View">
+                <h2>Suíte Garden View</h2>
+                <p>Diária: R$ 560 / noite</p>
+                <p>Com um toque romântico e sofisticado, a Suíte Garden View oferece uma atmosfera serena, com papel de
+                    parede botânico, iluminação suave e vista para o terraço. Perfeita para casais que buscam uma
+                    experiência relaxante com muito charme e elegância.</p>
+
+                <a href="#">SAIBA MAIS SOBRE ESSE QUARTO</a>
+            </article>
+
+            <article>
+                <img src="/images/bedrooms/quarto10.png" alt="Quarto Suíte Elegance Minimal">
+                <h2>Suíte Clássica Riviera</h2>
+                <p>Diária: R$ 490 / noite</p>
+                <p>Com design clean e iluminação natural abundante, a Suíte Elegance Minimal oferece conforto com um
+                    toque moderno e acolhedor. Ideal para quem busca tranquilidade e bom gosto, conta com poltrona de
+                    leitura, detalhes em madeira e decoração neutra que agrada a todos os estilos.</p>
+
+                <a href="#">SAIBA MAIS SOBRE ESSE QUARTO</a>
+            </article>
+
+            <article>
+                <img src="/images/bedrooms/quarto11.png" alt="Quarto Suíte Rústico Chic">
+                <h2>Suíte Clássica Riviera</h2>
+                <p>Diária: R$ 460 / noite</p>
+                <p>Combinando tons terrosos, madeira natural e toques de design moderno, a Suíte Rústico Chic é ideal
+                    para quem busca aconchego e elegância. A iluminação suave, a parede de destaque e os detalhes
+                    decorativos criam um ambiente relaxante e charmoso para qualquer ocasião.</p>
+
+                <a href="#">SAIBA MAIS SOBRE ESSE QUARTO</a>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <small>RoyalStay</small>
+        <small>&copy; 2025 - Todos os direitos reservados</small>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Newsletter</a>
+                </li>
+                <li>
+                    <a href="#">Quem Somos</a>
+                </li>
+
+                <li>
+                    <a href="#">Central de Atendimento</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Uso</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Parceria</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Privacidade</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Cancelamento</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Inativação</a>
+                </li>
+            </ul>
+        </nav>
+
+        <dl>
+            <dt>Horário de Atendimento</dt>
+            <dd>De segunda à sexta, das <time datetime="08:30">8h30</time> às <time datetime="18:00">18h</time></dd>
+        </dl>
+
+        <p><small>DESENVOLVIDO POR LAVÍNIA MONTEIRO &amp; WASLENY PIMENTA</small></p>
+    </footer>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 @use "../base/colors" as colors;
 @use "../utils/box-shadow" as *;
+@use "../utils/margin" as *;
 
 @mixin card {
     @include box-shadow;
@@ -10,8 +11,7 @@
 
 @mixin flat-card {
     @include card;
-    
-    margin: 1.9rem 3.75rem;
+    @include margin;
 }
 
 @mixin card-rounded {
