@@ -8,24 +8,24 @@ header {
   padding: 0.25rem 0.75rem;
 
   nav {
+    img {
+      height: 3.75rem;
+    }
+
     ul {
       display: flex;
       justify-content: space-between;
       align-items: center;
-    }
 
-    img {
-      height: 3.75rem;
+      li label img {
+        height: 2.5rem;
+      }
     }
 
     label {
       cursor: pointer;
       display: block;
       width: fit-content;
-    }
-
-    .avatar {
-      height: 2.5rem;
     }
 
     .dropdown-menu {

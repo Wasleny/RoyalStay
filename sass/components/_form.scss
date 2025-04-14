@@ -1,0 +1,17 @@
+@use "../base/colors" as colors;
+
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  input,
+  select {
+    width: 80%;
+    height: 2.5rem;
+    border: 1px solid colors.$white;
+    border-radius: 10px;
+    background-color: colors.$white;
+    outline: none;
+  }
+}

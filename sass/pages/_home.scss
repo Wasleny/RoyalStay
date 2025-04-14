@@ -1,8 +1,0 @@
-@use "../base/colors" as colors;
-@use "../utils/card" as *;
-
-section:first-of-type {
-  @include card;
-
-  margin: 1.9rem 3.75rem;
-}
