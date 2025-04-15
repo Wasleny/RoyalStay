@@ -6,8 +6,9 @@ on:
 
 jobs:
   lint:
+    name: Lint HTML and SCSS
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout do código
         uses: actions/checkout@v3
