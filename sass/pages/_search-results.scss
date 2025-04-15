@@ -2,7 +2,7 @@
 @use "../components/card" as *;
 @use "../utils/margin" as *;
 
-section > div {
+.results > div {
   @include margin;
 
   @media(width < 800px) {
@@ -29,6 +29,7 @@ section > div {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    text-align: center;
 
     img {
       width: 100%;

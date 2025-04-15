@@ -143,23 +143,23 @@ footer p small {
   font-size: 0.75rem;
 }
 
-.search {
+search {
   box-shadow: 4px 6px 6px rgba(45, 45, 45, 0.2509803922);
   padding: 1.25rem 0.75rem;
   background-color: #eaeaea;
   margin: 1.9rem 3.75rem;
 }
-.search form {
+search form {
   display: block;
 }
-.search form div {
+search form div {
   width: 100%;
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
 }
-.search form div select,
-.search form div input {
+search form div select,
+search form div input {
   width: 60%;
   height: 2rem;
   border: 1px solid #fff;
@@ -168,17 +168,17 @@ footer p small {
   outline: none;
   padding: 1rem;
 }
-.search form div:last-of-type label {
+search form div:last-of-type label {
   cursor: pointer;
 }
-.search form div img {
+search form div img {
   height: 0.875rem;
 }
 @media (width >= 800px) {
-  .search form {
+  search form {
     display: flex;
   }
-  .search form div {
+  search form div {
     width: 40%;
     height: 3rem;
     margin-left: 1.5em;
@@ -187,36 +187,36 @@ footer p small {
     justify-content: space-around;
     text-align: center;
   }
-  .search form div label {
+  search form div label {
     margin-right: 0.5rem;
   }
-  .search form div select,
-  .search form div input {
+  search form div select,
+  search form div input {
     height: 90%;
     width: 70%;
   }
 }
 @media (width < 800px) {
-  .search form button {
+  search form button {
     width: 100%;
   }
-  .search form button span {
+  search form button span {
     display: block;
     font-weight: 500;
   }
-  .search form button img {
+  search form button img {
     display: none;
   }
 }
-.search form button:hover {
+search form button:hover {
   background-color: #eaeaea;
   color: #003459;
 }
 @media (width >= 800px) {
-  .search form button:hover img:first-of-type {
+  search form button:hover img:first-of-type {
     display: none;
   }
-  .search form button:hover img:last-of-type {
+  search form button:hover img:last-of-type {
     display: block;
   }
 }
@@ -240,17 +240,17 @@ button img {
   height: 1.5rem;
 }
 
-section:not(:first-of-type) {
+.carousel {
   text-align: center;
   width: 100%;
   margin: 0 0 5rem;
 }
-section:not(:first-of-type) ul {
+.carousel ul {
   display: flex;
   width: 100%;
   margin-top: 3rem;
 }
-section:not(:first-of-type) ul li {
+.carousel ul li {
   box-shadow: 4px 6px 6px rgba(45, 45, 45, 0.2509803922);
   padding: 1.25rem 0.75rem;
   background-color: #eaeaea;
@@ -261,10 +261,10 @@ section:not(:first-of-type) ul li {
   z-index: 1;
   transform: none;
 }
-section:not(:first-of-type) ul li article img {
+.carousel ul li article img {
   width: 80%;
 }
-section:not(:first-of-type) ul li article p {
+.carousel ul li article p {
   font-size: 1rem;
   margin-top: 0.5rem;
   overflow: hidden;
@@ -274,17 +274,17 @@ section:not(:first-of-type) ul li article p {
   line-clamp: 3;
 }
 @media (width >= 800px) {
-  section:not(:first-of-type) ul li:nth-child(1), section:not(:first-of-type) ul li:nth-child(5) {
+  .carousel ul li:nth-child(1), .carousel ul li:nth-child(5) {
     opacity: 0.5;
     transform: scale(1);
     z-index: 0;
   }
-  section:not(:first-of-type) ul li:nth-child(2), section:not(:first-of-type) ul li:nth-child(4) {
+  .carousel ul li:nth-child(2), .carousel ul li:nth-child(4) {
     opacity: 0.75;
     transform: scale(1.1);
     z-index: 1;
   }
-  section:not(:first-of-type) ul li:nth-child(3) {
+  .carousel ul li:nth-child(3) {
     opacity: 1;
     transform: scale(1.2);
     z-index: 2;
@@ -292,10 +292,10 @@ section:not(:first-of-type) ul li article p {
 }
 
 @media (width < 800px) {
-  section:not(:first-of-type) h1 {
+  .carousel h1 {
     margin-bottom: 1rem;
   }
-  section:not(:first-of-type) ul {
+  .carousel ul {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -304,28 +304,28 @@ section:not(:first-of-type) ul li article p {
     padding: 0;
     margin: 0;
   }
-  section:not(:first-of-type) ul::-webkit-scrollbar {
+  .carousel ul::-webkit-scrollbar {
     display: none;
   }
-  section:not(:first-of-type) ul li {
+  .carousel ul li {
     flex: 0 0 100%;
     scroll-snap-align: center;
   }
-  section:not(:first-of-type) ul li article {
+  .carousel ul li article {
     height: 100%;
   }
-  section:not(:first-of-type) ul li article p {
+  .carousel ul li article p {
     -webkit-line-clamp: 4;
     line-clamp: 4;
   }
 }
-div {
+form > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-div input,
-div select {
+form > div input,
+form > div select {
   width: 80%;
   height: 2.5rem;
   border: 1px solid #fff;
@@ -370,28 +370,28 @@ div select {
     width: 100%;
   }
 }
-section > div {
+.results > div {
   margin: 1.9rem 3.75rem;
   display: grid;
   gap: 2.5rem;
   grid-template-columns: 1fr;
 }
 @media (width < 800px) {
-  section > div {
+  .results > div {
     margin: 0;
   }
 }
 @media (width > 800px) {
-  section > div {
+  .results > div {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (width > 1000px) {
-  section > div {
+  .results > div {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-section > div article {
+.results > div article {
   box-shadow: 4px 6px 6px rgba(45, 45, 45, 0.2509803922);
   padding: 1.25rem 0.75rem;
   background-color: #eaeaea;
@@ -400,22 +400,248 @@ section > div article {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  text-align: center;
 }
-section > div article img {
+.results > div article img {
   width: 100%;
 }
-section > div article p:first-of-type {
+.results > div article p:first-of-type {
   color: #7d1d3f;
   font-weight: bold;
 }
-section > div article p:not(:first-of-type) {
+.results > div article p:not(:first-of-type) {
   text-align: justify;
 }
-section > div article a {
+.results > div article a {
   text-decoration: underline;
   color: #d4a373;
   font-weight: bold;
   font-size: 1.25rem;
+}
+
+body > a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0.9rem 0.625rem;
+  color: #2d2d2d;
+  font-size: 2rem;
+}
+body > a img {
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.bedroom-details {
+  box-shadow: 4px 6px 6px rgba(45, 45, 45, 0.2509803922);
+  padding: 1.25rem 0.75rem;
+  background-color: #eaeaea;
+  margin: 1.9rem 3.75rem;
+  border-radius: 0.625rem;
+  padding: 2.5rem;
+  width: auto;
+}
+.bedroom-details > p:first-of-type {
+  color: #003459;
+  font-size: 1.5rem;
+}
+.bedroom-details > p:first-of-type span {
+  font-weight: bold;
+  font-size: 2.25rem;
+}
+.bedroom-details > p:not(:first-of-type) {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  text-align: justify;
+}
+.bedroom-details > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin-top: 1rem;
+}
+.bedroom-details > div:first-of-type > img {
+  width: 12.5rem;
+}
+.bedroom-details > div:first-of-type p {
+  font-size: 1rem;
+}
+.bedroom-details > section:first-of-type {
+  width: 100%;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+.bedroom-details > section:first-of-type figure img {
+  width: 100%;
+}
+.bedroom-details > section:first-of-type ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.bedroom-details > section:first-of-type ul li img {
+  width: 95%;
+}
+@media (width < 800px) {
+  .bedroom-details > section:first-of-type {
+    grid-template-columns: 1fr;
+  }
+  .bedroom-details > section:first-of-type ul {
+    flex-direction: row;
+  }
+}
+.bedroom-details h2 {
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.bedroom-details hr {
+  margin: 2.5rem 0;
+  height: 2px;
+  background-color: #003459;
+}
+.bedroom-details div[data-role=room-info] {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin: 0;
+}
+.bedroom-details div[data-role=room-info] aside {
+  box-shadow: 4px 6px 6px rgba(45, 45, 45, 0.2509803922);
+  padding: 1.25rem 0.75rem;
+  background-color: #eaeaea;
+  border: 2px solid #a663cc;
+  border-radius: 0.625rem;
+  min-width: 16rem;
+}
+.bedroom-details div[data-role=room-info] aside h4 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  color: #a663cc;
+}
+.bedroom-details div[data-role=room-info] aside > form > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 1rem;
+}
+.bedroom-details div[data-role=room-info] aside > form > div input {
+  width: 70%;
+  padding: 1rem;
+}
+.bedroom-details div[data-role=room-info] aside > form > p {
+  font-size: 1.25rem;
+  color: #2d2d2d;
+  margin-top: 1.25rem;
+}
+.bedroom-details div[data-role=room-info] aside > form > p span {
+  font-weight: bold;
+}
+.bedroom-details div[data-role=room-info] aside > form > button {
+  margin: 1rem auto 0;
+  font-weight: 400;
+  background-color: #a663cc;
+  border-color: #a663cc;
+}
+.bedroom-details div[data-role=room-info] aside > form > button:hover {
+  background-color: #eaeaea;
+  color: #a663cc;
+}
+@media (width < 800px) {
+  .bedroom-details div[data-role=room-info] {
+    flex-direction: column;
+  }
+  .bedroom-details div[data-role=room-info] aside {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .bedroom-details div[data-role=room-info] aside button {
+    width: 100%;
+  }
+}
+.bedroom-details div[data-role=list-info] * {
+  color: #003459;
+}
+.bedroom-details div[data-role=list-info] h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-right: auto;
+}
+.bedroom-details div[data-role=list-info] ul li {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+.bedroom-details div[data-role=list-info] ul li img {
+  height: 1.25rem;
+  width: auto;
+}
+.bedroom-details div[data-role=list-info]:last-child ul li p,
+.bedroom-details div[data-role=list-info]:last-child p:nth-of-type(2) {
+  font-style: italic;
+}
+.bedroom-details div[data-role=list-info]:last-child > p:first-of-type {
+  margin: 1.5rem 0;
+}
+
+section[data-role=rates] {
+  box-shadow: 4px 6px 6px rgba(45, 45, 45, 0.2509803922);
+  padding: 1.25rem 0.75rem;
+  background-color: #eaeaea;
+  margin: 1.9rem 3.75rem;
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section[data-role=rates] h3[data-role=rate-title] {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #003459;
+  text-align: center;
+}
+section[data-role=rates] article[data-role=rate] {
+  padding: 0 0.5rem;
+}
+section[data-role=rates] article[data-role=rate] div[data-role=info-rate] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section[data-role=rates] article[data-role=rate] div[data-role=info-rate] div {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+section[data-role=rates] article[data-role=rate] div[data-role=info-rate] div img {
+  height: 3rem;
+  width: auto;
+  margin-right: 1rem;
+}
+section[data-role=rates] article[data-role=rate] div[data-role=info-rate] p[data-role=rate-date] {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+section[data-role=rates] article[data-role=rate] p[data-role=comment] {
+  padding: 0.625rem;
+  background-color: #fff;
+  margin-top: 0.625rem;
+}
+section[data-role=rates] article[data-role=rate] p[data-role=star-rate] {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 0;
+}
+section[data-role=rates] article[data-role=rate] p[data-role=star-rate] > span ~ img {
+  width: 10rem;
+  vertical-align: middle;
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

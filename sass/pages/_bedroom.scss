@@ -1,0 +1,263 @@
+@use "../base/colors" as colors;
+@use "../components/card" as *;
+@use "../utils/box-shadow" as *;
+
+body > a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0.9rem 0.625rem;
+  color: colors.$black;
+  font-size: 2rem;
+
+  img {
+    width: 2rem;
+    margin-right: 1rem;
+  }
+}
+
+.bedroom-details {
+  @include card-rounded;
+
+  padding: 2.5rem;
+  width: auto;
+
+  & > p:first-of-type {
+    color: colors.$navy-blue;
+    font-size: 1.5rem;
+
+    span {
+      font-weight: bold;
+      font-size: 2.25rem;
+    }
+  }
+
+  & > p:not(:first-of-type) {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    text-align: justify;
+  }
+
+  & > div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-top: 1rem;
+
+    & > img {
+      width: 12.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  & > section:first-of-type {
+    width: 100%;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+    align-items: center;
+
+    figure img {
+      width: 100%;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      li img {
+        width: 95%;
+      }
+    }
+
+    @media (width < 800px) {
+      grid-template-columns: 1fr;
+
+      ul {
+        flex-direction: row;
+      }
+    }
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  hr {
+    margin: 2.5rem 0;
+    height: 2px;
+    background-color: colors.$navy-blue;
+  }
+
+  div[data-role="room-info"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0;
+
+    aside {
+      @include card;
+
+      border: 2px solid colors.$lavender;
+      border-radius: 0.625rem;
+      min-width: 16rem;
+
+      h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: center;
+        color: colors.$lavender;
+      }
+
+      & > form > div {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 1rem;
+
+        input {
+          width: 70%;
+          padding: 1rem;
+        }
+      }
+
+      & > form > p {
+        font-size: 1.25rem;
+        color: colors.$black;
+        margin-top: 1.25rem;
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      & > form > button {
+        margin: 1rem auto 0;
+        font-weight: 400;
+        background-color: colors.$lavender;
+        border-color: colors.$lavender;
+
+        &:hover {
+          background-color: colors.$off-white;
+          color: colors.$lavender;
+        }
+      }
+    }
+
+    @media (width < 800px) {
+      flex-direction: column;
+
+      aside {
+        margin-top: 2rem;
+        width: 100%;
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  div[data-role="list-info"] {
+    * {
+      color: colors.$navy-blue;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-right: auto;
+    }
+
+    ul li {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      align-items: center;
+
+      img {
+        height: 1.25rem;
+        width: auto;
+      }
+    }
+  }
+
+  div[data-role="list-info"]:last-child {
+    ul li p,
+    p:nth-of-type(2) {
+      font-style: italic;
+    }
+
+    & > p:first-of-type {
+      margin: 1.5rem 0;
+    }
+  }
+}
+
+section[data-role="rates"] {
+  @include card-rounded;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  h3[data-role="rate-title"] {
+    font-size: 2rem;
+    font-weight: bold;
+    color: colors.$navy-blue;
+    text-align: center;
+  }
+
+  article[data-role="rate"] {
+    padding: 0 0.5rem;
+
+    div[data-role="info-rate"] {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & div {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        & img {
+          height: 3rem;
+          width: auto;
+          margin-right: 1rem;
+        }
+      }
+
+      p[data-role="rate-date"] {
+        font-style: italic;
+        font-size: 0.75rem;
+      }
+    }
+
+    p[data-role="comment"] {
+      padding: 0.625rem;
+      background-color: colors.$white;
+      margin-top: 0.625rem;
+    }
+
+    p[data-role="star-rate"] {
+      display: flex;
+      align-items: center;
+      margin: 1rem 0 0;
+
+      & > span ~ img {
+        width: 10rem;
+        vertical-align: middle;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
