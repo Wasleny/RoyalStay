@@ -71,9 +71,6 @@ search {
       }
 
       &:hover {
-        background-color: colors.$off-white;
-        color: colors.$navy-blue;
-
         @media (width >= 800px) {
           img:first-of-type {
             display: none;

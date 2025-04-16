@@ -1,5 +1,6 @@
 @use "../base/colors" as colors;
 @use "../components/card" as *;
+@use "../components/buttons" as *;
 @use "../utils/box-shadow" as *;
 @use "../utils/border" as *;
 
@@ -141,15 +142,9 @@ body > a {
       }
 
       & > form > button {
-        margin: 1rem auto 0;
-        font-weight: 400;
-        background-color: colors.$lavender;
-        border-color: colors.$lavender;
+        @include button(colors.$lavender);
 
-        &:hover {
-          background-color: colors.$off-white;
-          color: colors.$lavender;
-        }
+        margin: 1rem auto 0;
       }
     }
 

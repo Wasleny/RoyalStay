@@ -111,36 +111,36 @@ header nav input[type=checkbox]:checked ~ .dropdown-menu {
   display: block;
 }
 
-footer {
+body > footer {
   width: 100%;
   background-color: #003459;
   padding: 1rem 8.5rem;
 }
-footer * {
+body > footer * {
   color: #eaeaea;
   text-align: center;
   font-size: 1.25rem;
 }
-footer small {
+body > footer small {
   display: block;
 }
-footer nav {
+body > footer nav {
   margin: 2.5rem 0;
 }
-footer nav ul {
+body > footer nav ul {
   display: flex;
   justify-content: space-between;
 }
 @media (width < 1400px) {
-  footer nav ul {
+  body > footer nav ul {
     flex-direction: column;
     gap: 1rem;
   }
 }
-footer dl {
+body > footer dl {
   margin-bottom: 3rem;
 }
-footer p small {
+body > footer p small {
   font-size: 0.75rem;
 }
 
@@ -207,10 +207,6 @@ search form div img {
     display: none;
   }
 }
-search form button:hover {
-  background-color: #eaeaea;
-  color: #003459;
-}
 @media (width >= 800px) {
   search form button:hover img:first-of-type {
     display: none;
@@ -227,7 +223,6 @@ button {
   align-items: center;
   justify-content: center;
   height: 3rem;
-  width: fit-content;
   padding: 1.5rem 0.75rem;
   color: #eaeaea;
   background-color: #003459;
@@ -237,6 +232,16 @@ button {
 }
 button img {
   height: 1.5rem;
+}
+button span {
+  color: #eaeaea;
+}
+button:hover {
+  background-color: #eaeaea;
+  color: #003459;
+}
+button:hover span {
+  color: #003459;
 }
 
 .carousel {
@@ -353,7 +358,7 @@ form > div select {
 }
 .login form p {
   margin-top: 2rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 .login form p a {
   color: #d4a373;
@@ -550,13 +555,31 @@ body > a img {
   font-weight: bold;
 }
 .bedroom-details div[data-role=room-info] aside > form > button {
-  margin: 1rem auto 0;
-  font-weight: 400;
+  border: 0.125rem solid #a663cc;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1.5rem 0.75rem;
+  color: #eaeaea;
   background-color: #a663cc;
-  border-color: #a663cc;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin: 1rem auto 0;
+}
+.bedroom-details div[data-role=room-info] aside > form > button img {
+  height: 1.5rem;
+}
+.bedroom-details div[data-role=room-info] aside > form > button span {
+  color: #eaeaea;
 }
 .bedroom-details div[data-role=room-info] aside > form > button:hover {
   background-color: #eaeaea;
+  color: #a663cc;
+}
+.bedroom-details div[data-role=room-info] aside > form > button:hover span {
   color: #a663cc;
 }
 @media (width < 800px) {
@@ -737,7 +760,7 @@ section[data-role=rates] article[data-role=rate] p[data-role=star-rate] > span ~
 }
 .register form p {
   margin-top: 2rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 .register form p a {
   color: #d4a373;
@@ -843,7 +866,7 @@ input[data-role=tab4]:checked ~ nav label[for=tab4] {
   color: white;
 }
 
-main section {
+main > section {
   display: none;
   width: auto;
 }
@@ -856,7 +879,7 @@ main section {
   display: block;
 }
 
-div[data-role=perfil] {
+main section div {
   box-shadow: 4px 6px 6px rgba(45, 45, 45, 0.2509803922);
   padding: 1.25rem 0.75rem;
   background-color: #eaeaea;
@@ -865,34 +888,212 @@ div[data-role=perfil] {
   margin: 0;
   width: 100%;
 }
-div[data-role=perfil] ul li {
+main section div ul li {
   margin: 1.5rem;
 }
-div[data-role=perfil] ul li strong {
+main section div ul li strong[data-role=info-perfil] {
   font-weight: 600;
 }
-div[data-role=perfil] a {
+main section div a {
   border: 0.125rem solid #d4a373;
   border-radius: 0.625rem;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 3rem;
-  width: fit-content;
   padding: 1.5rem 0.75rem;
   color: #eaeaea;
   background-color: #d4a373;
   font-weight: 500;
   font-size: 1.25rem;
   cursor: pointer;
-  margin: 0 1.5rem 0;
+  width: fit-content;
+  margin: 0 1.5rem;
 }
-div[data-role=perfil] a img {
+main section div a img {
   height: 1.5rem;
 }
+main section div a span {
+  color: #eaeaea;
+}
+main section div a:hover {
+  background-color: #eaeaea;
+  color: #d4a373;
+}
+main section div a:hover span {
+  color: #d4a373;
+}
 @media (width < 800px) {
-  div[data-role=perfil] a {
+  main section div a {
     width: auto;
+  }
+}
+
+#tab2:checked ~ main section:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  justify-content: space-between;
+  width: auto;
+}
+#tab2:checked ~ main section:nth-of-type(2) article {
+  box-shadow: 4px 6px 6px rgba(45, 45, 45, 0.2509803922);
+  padding: 1.25rem 0.75rem;
+  background-color: #eaeaea;
+  margin: 1.9rem 3.75rem;
+  border-radius: 0.625rem;
+}
+#tab2:checked ~ main section:nth-of-type(2) article header {
+  height: auto;
+}
+#tab2:checked ~ main section:nth-of-type(2) article header h2 {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+#tab2:checked ~ main section:nth-of-type(2) article header h2 img {
+  height: 1.9rem;
+}
+#tab2:checked ~ main section:nth-of-type(2) article header p {
+  color: rgba(45, 45, 45, 0.6);
+  font-size: 1rem;
+}
+#tab2:checked ~ main section:nth-of-type(2) article header p img {
+  height: 1rem;
+}
+#tab2:checked ~ main section:nth-of-type(2) article section {
+  padding: 0.25rem 0.75rem;
+}
+#tab2:checked ~ main section:nth-of-type(2) article section p {
+  margin-top: 1rem;
+}
+#tab2:checked ~ main section:nth-of-type(2) article section p img {
+  height: 1.25rem;
+}
+#tab2:checked ~ main section:nth-of-type(2) article section p strong {
+  font-weight: 600;
+}
+#tab2:checked ~ main section:nth-of-type(2) article section p span[data-role=confirmed] {
+  color: #059669;
+}
+#tab2:checked ~ main section:nth-of-type(2) article section p span[data-role=pending] {
+  color: #d4a373;
+}
+#tab2:checked ~ main section:nth-of-type(2) article section p span[data-role=canceled] {
+  color: #7d1d3f;
+}
+#tab2:checked ~ main section:nth-of-type(2) article section p span[data-role=finished] {
+  color: #a663cc;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:first-of-type {
+  border: 0.125rem solid #d4a373;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1.5rem 0.75rem;
+  color: #eaeaea;
+  background-color: #d4a373;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #d4a373;
+  background-color: #eaeaea;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:first-of-type img {
+  height: 1.5rem;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:first-of-type span {
+  color: #eaeaea;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:first-of-type:hover {
+  background-color: #eaeaea;
+  color: #d4a373;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:first-of-type:hover span {
+  color: #d4a373;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:first-of-type:hover {
+  background-color: #d4a373;
+  color: #eaeaea;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(2) {
+  border: 0.125rem solid #7d1d3f;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1.5rem 0.75rem;
+  color: #eaeaea;
+  background-color: #7d1d3f;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(2) img {
+  height: 1.5rem;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(2) span {
+  color: #eaeaea;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(2):hover {
+  background-color: #eaeaea;
+  color: #7d1d3f;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(2):hover span {
+  color: #7d1d3f;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a[data-role=finished] {
+  border: 0.125rem solid #a663cc;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1.5rem 0.75rem;
+  color: #eaeaea;
+  background-color: #a663cc;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a[data-role=finished] img {
+  height: 1.5rem;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a[data-role=finished] span {
+  color: #eaeaea;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a[data-role=finished]:hover {
+  background-color: #eaeaea;
+  color: #a663cc;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a[data-role=finished]:hover span {
+  color: #a663cc;
+}
+@media (width < 800px) {
+  #tab2:checked ~ main section:nth-of-type(2) article footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #tab2:checked ~ main section:nth-of-type(2) article footer a {
+    width: auto;
+  }
+}
+@media (width < 800px) {
+  #tab2:checked ~ main section:nth-of-type(2) {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin-top: 4rem;
+  }
+  #tab2:checked ~ main section:nth-of-type(2) article {
+    margin: 0;
   }
 }
 
