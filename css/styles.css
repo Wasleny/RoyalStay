@@ -1166,4 +1166,99 @@ span[data-role=finished] {
   color: #a663cc;
 }
 
+.cancellation {
+  box-shadow: 4px 6px 6px rgba(45, 45, 45, 0.2509803922);
+  padding: 1.25rem 0.75rem;
+  background-color: #eaeaea;
+  margin: 1.9rem 3.75rem;
+  border-radius: 0.625rem;
+  text-align: center;
+}
+.cancellation p {
+  margin: 2.5rem 0;
+  font-size: 1.5rem;
+}
+.cancellation p a {
+  color: #d4a373;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.cancellation p strong {
+  font-weight: 600;
+}
+.cancellation p strong:last-of-type {
+  color: #059669;
+  text-decoration: underline;
+}
+.cancellation div {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.cancellation div a:first-of-type {
+  border: 0.125rem solid #d4a373;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1.5rem 0.75rem;
+  color: #eaeaea;
+  background-color: #d4a373;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #d4a373;
+  background-color: #eaeaea;
+}
+.cancellation div a:first-of-type img {
+  height: 1.5rem;
+}
+.cancellation div a:first-of-type span {
+  color: #eaeaea;
+}
+.cancellation div a:first-of-type:hover {
+  background-color: #eaeaea;
+  color: #d4a373;
+}
+.cancellation div a:first-of-type:hover span {
+  color: #d4a373;
+}
+.cancellation div a:first-of-type:hover {
+  background-color: #d4a373;
+  color: #eaeaea;
+}
+.cancellation div a:last-of-type {
+  border: 0.125rem solid #7d1d3f;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1.5rem 0.75rem;
+  color: #eaeaea;
+  background-color: #7d1d3f;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.cancellation div a:last-of-type img {
+  height: 1.5rem;
+}
+.cancellation div a:last-of-type span {
+  color: #eaeaea;
+}
+.cancellation div a:last-of-type:hover {
+  background-color: #eaeaea;
+  color: #7d1d3f;
+}
+.cancellation div a:last-of-type:hover span {
+  color: #7d1d3f;
+}
+@media (width < 800px) {
+  .cancellation div {
+    flex-direction: column-reverse;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

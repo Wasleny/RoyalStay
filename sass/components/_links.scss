@@ -1,12 +1,7 @@
 @use "../base/colors" as colors;
 
 @mixin link {
-  margin-top: 2rem;
-  font-size: 1rem;
-
-  a {
-    color: colors.$caramel;
-    text-decoration: underline;
-    font-weight: bold;
-  }
+  color: colors.$caramel;
+  text-decoration: underline;
+  font-weight: bold;
 }

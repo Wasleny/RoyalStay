@@ -35,7 +35,7 @@
   }
 }
 
-@mixin button-outlined($color: colors.$navy-blue) {
+@mixin button-outlined($color: colors.$caramel) {
   @include button($color);
 
   color: $color;
