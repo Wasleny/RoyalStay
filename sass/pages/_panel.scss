@@ -179,6 +179,43 @@ main section div {
   }
 }
 
+#tab4:checked ~ main section:nth-of-type(4) {
+  article {
+    @include card-rounded;
+
+    width: auto;
+    margin: 2rem 0;
+
+    header p {
+      font-size: 1.25rem;
+
+      img {
+        height: 1.25rem;
+      }
+    }
+
+    blockquote p {
+      color: colors.$black-transparent-60;
+      font-size: 1rem;
+      margin: 1rem 0;
+    }
+
+    footer small {
+      font-style: italic;
+      font-size: 0.75rem;
+    }
+  }
+
+  @media (width < 800px) {
+    margin: 0;
+
+    article {
+      padding: 2rem;
+      border-radius: 0;
+    }
+  }
+}
+
 #tab2:checked ~ main section:nth-of-type(2) {
   display: grid;
   grid-template-columns: 1fr 1fr;
