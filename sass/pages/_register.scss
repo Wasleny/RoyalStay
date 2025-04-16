@@ -93,7 +93,12 @@
     }
 
     p {
-      @include link;
+      margin-top: 2rem;
+      font-size: 1rem;
+
+      a {
+        @include link;
+      }
     }
 
     button {
