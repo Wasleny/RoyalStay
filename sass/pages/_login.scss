@@ -1,5 +1,6 @@
 @use "../base/colors" as colors;
 @use "../components/card" as *;
+@use "../components/links" as *;
 
 .login {
   @include card;
@@ -17,6 +18,10 @@
       width: auto;
       margin-top: 2rem;
       justify-content: space-between;
+    }
+
+    p {
+      @include link;
     }
 
     button {

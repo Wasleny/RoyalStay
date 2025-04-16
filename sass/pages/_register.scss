@@ -1,0 +1,101 @@
+@use "../base/colors" as colors;
+@use "../components/card" as *;
+@use "../components/links" as *;
+
+.register {
+  @include card-rounded;
+
+  form {
+    padding: 2rem;
+    font-size: 1.25rem;
+
+    input,
+    select {
+      font-size: 1rem;
+    }
+
+    div[data-role="acceptance"] {
+      display: flex;
+      justify-content: start;
+      margin-top: 2rem;
+      gap: 1rem;
+
+      input {
+        width: auto;
+        height: 1.5rem;
+      }
+
+      label span {
+        color: colors.$red;
+      }
+    }
+
+    input[type="radio"]:disabled + label {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    div[data-role="user-type"] {
+      display: flex;
+      justify-content: start;
+      gap: 4rem;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        input[type="radio"] {
+          height: 1rem;
+        }
+      }
+    }
+
+    div[data-role="data"] {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+
+        input, select {
+          width: auto;
+          padding: 0 1rem;
+        }
+
+        label span {
+          color: colors.$red;
+        }
+      }
+
+      @media(width < 800px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    div[data-role="data"]:nth-child(3), div[data-role="data"]:nth-child(7) {
+      grid-template-columns: 1fr 1fr 1fr;
+
+      @media(width < 800px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    p {
+      @include link;
+    }
+
+    button {
+      margin: 2rem 0 0 auto;
+
+      @media (width < 800px) {
+        width: 100%;
+      }
+    }
+  }
+}
