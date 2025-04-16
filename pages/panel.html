@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="/images/LOGO.png">
+
+    <title>RoyalStay</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html"><img src="/images/LOGO.png" alt="Logo RoyalStay"></a>
+                </li>
+                <li>
+                    <input type="checkbox" id="dropdown-toggle" hidden>
+
+                    <label for="dropdown-toggle">
+                        <img src="/images/avatars/generic_avatar.png" alt="Menu">
+                    </label>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="/pages/auth/login.html">ENTRAR</a></li>
+                        <li><a href="/pages/auth/register.html">CADASTRAR</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="user-header">
+        <div data-role="user-info">
+            <img src="/images/avatars/first_guest.png" alt="Avatar de Fulana da Silva" data-role="user-avatar" />
+
+            <div data-role="user-text">
+                <strong>Olá, Fulana da Silva</strong>
+                <p>Preparado(a) para sua própria viagem?</p>
+            </div>
+        </div>
+
+        <span data-role="status-badge">Status do perfil: Ativo</span>
+    </section>
+
+
+    <input type="radio" name="tabs" data-role="tab1" id="tab1" checked>
+    <input type="radio" name="tabs" data-role="tab2" id="tab2">
+    <input type="radio" name="tabs" data-role="tab3" id="tab3">
+    <input type="radio" name="tabs" data-role="tab4" id="tab4">
+
+    <nav>
+        <label for="tab1">PERFIL</label>
+        <label for="tab2">RESERVAS</label>
+        <label for="tab3">PAGAMENTOS</label>
+        <label for="tab4">AVALIAÇÕES</label>
+    </nav>
+
+    <main>
+        <section>
+            <div data-role="perfil">
+                <ul>
+                    <li>
+                        <strong data-role="info-perfil">Nome Completo: </strong>
+                        Fulana da Silva
+                    </li>
+
+                    <li>
+                        <strong data-role="info-perfil">E-mail: </strong>
+                        fuluna.silva@gmail.com
+                    </li>
+
+                    <li>
+                        <strong data-role="info-perfil">Telefone / Celular:</strong>
+                        +55 00 00000-0000
+                    </li>
+
+                    <li>
+                        <strong data-role="info-perfil">Tipo de Documento:</strong>
+                        CPF
+                    </li>
+
+                    <li>
+                        <strong data-role="info-perfil">Documento:</strong>
+                        000.000.000-00
+                    </li>
+
+                    <li>
+                        <strong data-role="info-perfil">Endereço:</strong>
+                        Nome da rua, numero - cidade-estado, país
+                    </li>
+                </ul>
+
+                <a href="#">EDITAR PERFIL</a>
+            </div>
+        </section>
+        <section>Conteúdo das RESERVAS</section>
+        <section>Conteúdo dos PAGAMENTOS</section>
+        <section>Conteúdo das AVALIAÇÕES</section>
+    </main>
+
+    <footer>
+        <small>RoyalStay</small>
+        <small>&copy; 2025 - Todos os direitos reservados</small>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Newsletter</a>
+                </li>
+                <li>
+                    <a href="#">Quem Somos</a>
+                </li>
+
+                <li>
+                    <a href="#">Central de Atendimento</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Uso</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Parceria</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Privacidade</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Cancelamento</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Inativação</a>
+                </li>
+            </ul>
+        </nav>
+
+        <dl>
+            <dt>Horário de Atendimento</dt>
+            <dd>De segunda à sexta, das <time datetime="08:30">8h30</time> às <time datetime="18:00">18h</time></dd>
+        </dl>
+
+        <p><small>DESENVOLVIDO POR LAVÍNIA MONTEIRO &amp; WASLENY PIMENTA</small></p>
+    </footer>
+</body>
+
+</html>

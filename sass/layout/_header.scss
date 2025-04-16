@@ -1,5 +1,6 @@
 @use "../base/colors" as colors;
 @use "../utils/box-shadow" as *;
+@use "../utils/border" as *;
 
 header {
   width: 100%;
@@ -39,6 +40,8 @@ header {
       width: 100vw;
 
       @media (width >= 525px) {
+        @include border-radius;
+
         display: none;
         position: absolute;
         right: 0.75rem;
@@ -47,7 +50,6 @@ header {
         margin: 0;
         z-index: 1;
         width: 10rem;
-        border-radius: 10px;
       }
 
       @include box-shadow;

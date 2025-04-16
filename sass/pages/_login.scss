@@ -1,13 +1,14 @@
 @use "../base/colors" as colors;
 @use "../components/card" as *;
 @use "../components/links" as *;
+@use "../utils/border" as *;
 
 .login {
   @include card;
+  @include border-radius;
 
   width: 40%;
   margin: 1.9rem auto;
-  border-radius: 0.625rem;
 
   form {
     display: block;
@@ -33,10 +34,10 @@
 @media (width < 800px) {
   .login {
     @include card;
+    @include border-radius(0);
 
     width: 100%;
     margin-top: 1.9rem;
-    border-radius: 0;
 
     form button {
       margin: 2rem 0 0;
