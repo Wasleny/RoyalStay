@@ -1,16 +1,17 @@
 @use "../base/colors" as colors;
+@use "../utils/border" as *;
 
-button {
-  border: 2px solid colors.$navy-blue;
-  border-radius: 10px;
+@mixin button($color: colors.$navy-blue) {
+  @include border($color);
+  @include border-radius;
+
   display: flex;
   align-items: center;
   justify-content: center;
   height: 3rem;
-  width: fit-content;
   padding: 1.5rem 0.75rem;
   color: colors.$off-white;
-  background-color: colors.$navy-blue;
+  background-color: $color;
   font-weight: 500;
   font-size: 1.25rem;
 
@@ -18,5 +19,40 @@ button {
     height: 1.5rem;
   }
 
+  span {
+    color: colors.$off-white;
+  }
+
   cursor: pointer;
+
+  &:hover {
+    background-color: colors.$off-white;
+    color: $color;
+
+    span {
+      color: $color;
+    }
+  }
+}
+
+@mixin button-outlined($color: colors.$navy-blue) {
+  @include button($color);
+
+  color: $color;
+  background-color: colors.$off-white;
+
+  &:hover {
+    background-color: $color;
+    color: colors.$off-white;
+  }
+}
+
+@mixin button-link($color: colors.$navy-blue) {
+  @include button($color);
+
+  width: fit-content;
+}
+
+button {
+  @include button;
 }

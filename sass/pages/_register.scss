@@ -49,6 +49,12 @@
           height: 1rem;
         }
       }
+
+      @media(width < 800px) {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: start;
+      }
     }
 
     div[data-role="data"] {

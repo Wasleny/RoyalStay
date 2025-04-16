@@ -1,6 +1,8 @@
 @use "../base/colors" as colors;
 @use "../components/card" as *;
+@use "../components/buttons" as *;
 @use "../utils/box-shadow" as *;
+@use "../utils/border" as *;
 
 body > a {
   display: flex;
@@ -17,9 +19,8 @@ body > a {
 }
 
 .bedroom-details {
-  @include card-rounded;
+  @include card-rounded(2.5rem);
 
-  padding: 2.5rem;
   width: auto;
 
   & > p:first-of-type {
@@ -29,6 +30,7 @@ body > a {
     span {
       font-weight: bold;
       font-size: 2.25rem;
+      color: colors.$navy-blue;
     }
   }
 
@@ -105,9 +107,9 @@ body > a {
 
     aside {
       @include card;
+      @include border(colors.$lavender);
+      @include border-radius;
 
-      border: 2px solid colors.$lavender;
-      border-radius: 0.625rem;
       min-width: 16rem;
 
       h4 {
@@ -140,15 +142,9 @@ body > a {
       }
 
       & > form > button {
-        margin: 1rem auto 0;
-        font-weight: 400;
-        background-color: colors.$lavender;
-        border-color: colors.$lavender;
+        @include button(colors.$lavender);
 
-        &:hover {
-          background-color: colors.$off-white;
-          color: colors.$lavender;
-        }
+        margin: 1rem auto 0;
       }
     }
 

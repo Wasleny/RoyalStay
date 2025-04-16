@@ -1,6 +1,6 @@
 @use "../base/colors" as colors;
 
-footer {
+body > footer {
   * {
     color: colors.$off-white;
     text-align: center;
