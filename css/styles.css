@@ -1261,4 +1261,117 @@ span[data-role=finished] {
   }
 }
 
+.owner-validation {
+  box-shadow: 4px 6px 6px rgba(45, 45, 45, 0.2509803922);
+  padding: 1.25rem 0.75rem;
+  background-color: #eaeaea;
+  margin: 1.9rem 3.75rem;
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.owner-validation p {
+  margin: 3rem 0 1rem;
+}
+.owner-validation p ~ a {
+  border: 0.125rem solid #d4a373;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1.5rem 0.75rem;
+  color: #eaeaea;
+  background-color: #d4a373;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: #d4a373;
+  background-color: #eaeaea;
+  width: fit-content;
+}
+.owner-validation p ~ a img {
+  height: 1.5rem;
+}
+.owner-validation p ~ a span {
+  color: #eaeaea;
+}
+.owner-validation p ~ a:hover {
+  background-color: #eaeaea;
+  color: #d4a373;
+}
+.owner-validation p ~ a:hover span {
+  color: #d4a373;
+}
+.owner-validation p ~ a:hover {
+  background-color: #d4a373;
+  color: #eaeaea;
+}
+.owner-validation div {
+  display: flex;
+  gap: 3rem;
+  margin-top: 6rem;
+}
+.owner-validation div a:first-of-type {
+  border: 0.125rem solid #7d1d3f;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1.5rem 0.75rem;
+  color: #eaeaea;
+  background-color: #7d1d3f;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.owner-validation div a:first-of-type img {
+  height: 1.5rem;
+}
+.owner-validation div a:first-of-type span {
+  color: #eaeaea;
+}
+.owner-validation div a:first-of-type:hover {
+  background-color: #eaeaea;
+  color: #7d1d3f;
+}
+.owner-validation div a:first-of-type:hover span {
+  color: #7d1d3f;
+}
+.owner-validation div a:last-of-type {
+  border: 0.125rem solid #003459;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1.5rem 0.75rem;
+  color: #eaeaea;
+  background-color: #003459;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.owner-validation div a:last-of-type img {
+  height: 1.5rem;
+}
+.owner-validation div a:last-of-type span {
+  color: #eaeaea;
+}
+.owner-validation div a:last-of-type:hover {
+  background-color: #eaeaea;
+  color: #003459;
+}
+.owner-validation div a:last-of-type:hover span {
+  color: #003459;
+}
+@media (width < 800px) {
+  .owner-validation div {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
