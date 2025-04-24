@@ -130,7 +130,7 @@ main section div {
   ul li {
     margin: 1.5rem;
 
-    strong[data-role="info-perfil"] {
+    strong[data-role="profile-information"] {
       font-weight: 600;
     }
   }
@@ -216,7 +216,8 @@ main section div {
   }
 }
 
-#tab2:checked ~ main section:nth-of-type(2) {
+#tab2:checked ~ main section:nth-of-type(2),
+#tab3:checked ~ main section[data-role="reservations"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0;

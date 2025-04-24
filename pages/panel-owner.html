@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="/images/LOGO.png">
+
+    <title>RoyalStay</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html"><img src="/images/LOGO.png" alt="Logo RoyalStay"></a>
+                </li>
+                <div>
+                    <li>
+                        <img src="/images/icons/notification.png" alt="Ícome de Notificações">
+                    </li>
+                    <li>
+                        <img src="/images/icons/message.png" alt="Ícone de Mensagem">
+                    </li>
+                    <li>
+                        <input type="checkbox" id="dropdown-toggle" hidden>
+
+                        <label for="dropdown-toggle">
+                            <img src="/images/avatars/owner.png" alt="Ícone de Perfil">
+                        </label>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="/pages/panel-owner.html">PAINEL</a></li>
+                            <li><a href="/index.html">SAIR</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="user-header">
+        <div data-role="user-info">
+            <img src="/images/avatars/owner.png" alt="Ícone de Usuário" />
+
+            <div data-role="user-text">
+                <strong>Olá, "Nome do Proprietário</strong>
+                <p>Informações Principais:</p>
+            </div>
+        </div>
+
+        <span data-role="status-badge">Status do proprietário: Ativo</span>
+    </section>
+
+
+    <input type="radio" name="tabs" data-role="tab1" id="tab1" checked>
+    <input type="radio" name="tabs" data-role="tab2" id="tab2">
+    <input type="radio" name="tabs" data-role="tab3" id="tab3">
+
+    <nav>
+        <label for="tab1">DADOS</label>
+        <label for="tab2">HOTÉIS</label>
+        <label for="tab3">FUNCIONÁRIOS</label>
+    </nav>
+
+    <main>
+        <section>
+            <div>
+                <ul>
+                    <li>
+                        <strong data-role="profile-information">Nome Completo: </strong>
+                        Nome do Proprietário:
+                    </li>
+
+                    <li>
+                        <strong data-role="profile-information">E-mail: </strong>
+                        proprietario@gmail.com
+                    </li>
+
+                    <li>
+                        <strong data-role="profile-information">Telefone / Celular:</strong>
+                        +55 00 00000-0000
+                    </li>
+
+                    <li>
+                        <strong data-role="profile-information">CNPJ:</strong>
+                        000.000.000/0000-00
+                    </li>
+
+                    <li>
+                        <strong data-role="profile-information">CPF:</strong>
+                        000.000.000-00
+                    </li>
+
+                    <li>
+                        <strong data-role="profile-information">Endereço:</strong>
+                        Nome da rua, numero - cidade-estado, país
+                    </li>
+                </ul>
+
+                <a href="#">EDITAR DADOS</a>
+            </div>
+        </section>
+
+        <section>
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/icons/building.png" alt="Ícone de um prédio">
+                        Villa Serenità
+                    </h2>
+                    <p>
+                        <img src="/images/icons/location.png" alt="Ícone de localização">
+                        Rio de Janeiro - RJ, Brasil
+                    </p>
+                </header>
+
+                <section>
+                    <p data-role="star-rate">
+                        <img src="/images/icons/rate.png" alt="5 de 5 estrelas">
+                    </p>
+                    <p>
+                        <strong>Status: </strong>
+                        <span data-role="confirmed">Ativo</span>
+                    </p>
+                </section>
+
+                <footer>
+                    <a href="#">VER DETALHES</a>
+                    <a href="#">DESATIVAR</a>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/icons/building.png" alt="Ícone de um prédio">
+                        Royal Horizon
+                    </h2>
+                    <p>
+                        <img src="/images/icons/location.png" alt="Ícone de localização">
+                        Belo Horizonte - MG, Brasil
+                    </p>
+                </header>
+
+                <section>
+                    <p data-role="star-rate">
+                        <img src="/images/icons/rate.png" alt="5 de 5 estrelas">
+                    </p>
+                    <p>
+                        <strong>Status: </strong>
+                        <span data-role="confirmed">Ativo</span>
+                    </p>
+                </section>
+
+                <footer>
+                    <a href="#">VER DETALHES</a>
+                    <a href="#">DESATIVAR</a>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/icons/building.png" alt="Ícone de um prédio">
+                        Imperiale
+                    </h2>
+                    <p>
+                        <img src="/images/icons/location.png" alt="Ícone de localização">
+                        São Paulo - SP, Brasil
+                    </p>
+                </header>
+
+                <section>
+                    <p data-role="star-rate">
+                        <img src="/images/icons/rate.png" alt="5 de 5 estrelas">
+                    </p>
+                    <p>
+                        <strong>Status: </strong>
+                        <span data-role="confirmed">Ativo</span>
+                    </p>
+                </section>
+
+                <footer>
+                    <a href="#">VER DETALHES</a>
+                    <a href="#">DESATIVAR</a>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/icons/building.png" alt="Ícone de um prédio">
+                        Skyline Inn
+                    </h2>
+                    <p>
+                        <img src="/images/icons/location.png" alt="Ícone de localização">
+                        Balneário Camboriú - SC, Brasil
+                    </p>
+                </header>
+
+                <section>
+                    <p data-role="star-rate">
+                        <img src="/images/icons/rate.png" alt="5 de 5 estrelas">
+                    </p>
+                    <p>
+                        <strong>Status: </strong>
+                        <span data-role="confirmed">Ativo</span>
+                    </p>
+                </section>
+
+                <footer>
+                    <a href="#">VER DETALHES</a>
+                    <a href="#">DESATIVAR</a>
+                </footer>
+            </article>
+        </section>
+
+        <section data-role="reservations">
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/avatars/first_employee.png" alt="Ícone de um Usuário">
+                        <strong>Amanda Silva</strong>
+                    </h2>
+                </header>
+
+                <section>
+                    <p>
+                        <img src="/images/icons/calendar.png" alt="Ícone de Calendário">
+                        <strong>Data:</strong> 18/04/2020 - atual
+                    </p>
+                    <p>
+                        <img src="/images/icons/position.png" alt="Ícone de Cargo">
+                        <strong>Cargo:</strong>Recepcionista
+                    </p>
+                    <p data-role="star-rate">
+                        <img src="/images/icons/black_star.png" alt="Ícone de Avaliação">
+                        <strong data-role="star-rate">Avaliação Atual: </strong>
+                        <img src="/images/icons/rate.png" alt="5 de 5 estrelas">
+                    </p>
+                </section>
+
+                <footer>
+                    <a href="#">VER DETALHES</a>
+                    <a href="#">DESATIVAR</a>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/avatars/second_employee.png" alt="Ícone de um Usuário">
+                        <strong>Carlos Tavares</strong>
+                    </h2>
+                </header>
+                
+                <section>
+                    <p>
+                        <img src="/images/icons/calendar.png" alt="Ícone de Calendário">
+                        <strong>Data:</strong> 12/03/2021 - atual
+                    </p>
+                    <p>
+                        <img src="/images/icons/position.png" alt="Ícone de Cargo">
+                        <strong>Cargo:</strong>Segurança
+                    </p>
+                    <p data-role="star-rate">
+                        <img src="/images/icons/black_star.png" alt="Ícone de Avaliação">
+                        <strong data-role="star-rate">Avaliação Atual: </strong>
+                        <img src="/images/icons/rate.png" alt="5 de 5 estrelas">
+                    </p>
+                </section>
+
+                <footer>
+                    <a href="#">VER DETALHES</a>
+                    <a href="#">DESATIVAR</a>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/avatars/third_employee.png" alt="Ícone de um Usuário">
+                        <strong>Karina Montovani</strong>
+                    </h2>
+                </header>
+
+                <section>
+                    <p>
+                        <img src="/images/icons/calendar.png" alt="Ícone de Calendário">
+                        <strong>Data:</strong> 05/05/2022 - atual
+                    </p>
+                    <p>
+                        <img src="/images/icons/position.png" alt="Ícone de Cargo">
+                        <strong>Cargo:</strong>Financeiro
+                    </p>
+                    <p data-role="star-rate">
+                        <img src="/images/icons/black_star.png" alt="Ícone de Avaliação">
+                        <strong data-role="star-rate">Avaliação Atual: </strong>
+                        <img src="/images/icons/rate.png" alt="5 de 5 estrelas">
+                    </p>
+                </section>
+
+                <footer>
+                    <a href="#">VER DETALHES</a>
+                    <a href="#">DESATIVAR</a>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/avatars/fourth_employee.png" alt="Ícone de um Usuário">
+                        <strong>Mariana Luz</strong>
+                    </h2>
+                </header>
+
+                <section>
+                    <p>
+                        <img src="/images/icons/calendar.png" alt="Ícone de Calendário">
+                        <strong>Data:</strong> 23/01/2019 - atual
+                    </p>
+                    <p>
+                        <img src="/images/icons/position.png" alt="Ícone de Cargo">
+                        <strong>Cargo:</strong>Gerente Geral
+                    </p>
+                    <p data-role="star-rate">
+                        <img src="/images/icons/black_star.png" alt="Ícone de Avaliação">
+                        <strong data-role="star-rate">Avaliação Atual: </strong>
+                        <img src="/images/icons/rate.png" alt="5 de 5 estrelas">
+                    </p>
+                </section>
+
+                <footer>
+                    <a href="#">VER DETALHES</a>
+                    <a href="#">DESATIVAR</a>
+                </footer>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <small>RoyalStay</small>
+        <small>&copy; 2025 - Todos os direitos reservados</small>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Newsletter</a>
+                </li>
+                <li>
+                    <a href="#">Quem Somos</a>
+                </li>
+
+                <li>
+                    <a href="#">Central de Atendimento</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Uso</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Parceria</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Privacidade</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Cancelamento</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Inativação</a>
+                </li>
+            </ul>
+        </nav>
+
+        <dl>
+            <dt>Horário de Atendimento</dt>
+            <dd>De segunda à sexta, das <time datetime="08:30">8h30</time> às <time datetime="18:00">18h</time></dd>
+        </dl>
+
+        <p><small>DESENVOLVIDO POR LAVÍNIA MONTEIRO &amp; WASLENY PIMENTA</small></p>
+    </footer>
+</body>
+
+</html>
