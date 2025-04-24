@@ -1262,8 +1262,8 @@ main section div a:hover span {
   #tab3:checked ~ main section[data-role=employees],
   #tab3:checked ~ main section[data-role=requests] {
     grid-template-columns: 1fr;
-    gap: 4rem;
-    margin-top: 4rem;
+    gap: 3rem;
+    margin-top: 2rem;
   }
   #tab2:checked ~ main section:nth-of-type(2) article,
   #tab3:checked ~ main section[data-role=employees] article,
@@ -1296,6 +1296,53 @@ span[data-role=canceled] {
 
 span[data-role=finished] {
   color: #a663cc;
+}
+
+div[data-role=add-button] {
+  grid-column: 1/-1;
+  margin: 0 3.75rem;
+  width: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background: none;
+  box-shadow: none;
+}
+div[data-role=add-button] a {
+  border: 0.125rem solid #003459;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1.5rem 0.75rem;
+  color: #eaeaea;
+  background-color: #003459;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin: 0;
+}
+div[data-role=add-button] a img {
+  height: 1.5rem;
+}
+div[data-role=add-button] a span {
+  color: #eaeaea;
+}
+div[data-role=add-button] a:hover {
+  background-color: #eaeaea;
+  color: #003459;
+}
+div[data-role=add-button] a:hover span {
+  color: #003459;
+}
+@media (width < 800px) {
+  div[data-role=add-button] {
+    justify-content: center;
+  }
+  div[data-role=add-button] a {
+    width: 100%;
+  }
 }
 
 .cancellation {
