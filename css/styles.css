@@ -590,6 +590,13 @@ body > a img {
 .bedroom-details div[data-role=room-info] aside > form > button:hover span {
   color: #a663cc;
 }
+.bedroom-details div[data-role=room-info] div[data-role=current-reservations] h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #003459;
+  text-align: center;
+  margin-bottom: 1rem;
+}
 @media (width < 800px) {
   .bedroom-details div[data-role=room-info] {
     flex-direction: column;
@@ -599,6 +606,12 @@ body > a img {
     width: 100%;
   }
   .bedroom-details div[data-role=room-info] aside button {
+    width: 100%;
+  }
+  .bedroom-details div[data-role=room-info] div[data-role=current-reservations] {
+    margin-top: 2rem;
+  }
+  .bedroom-details div[data-role=room-info] div[data-role=current-reservations] img {
     width: 100%;
   }
 }
@@ -1004,14 +1017,16 @@ main section div a:hover span {
 }
 
 #tab2:checked ~ main section:nth-of-type(2),
-#tab3:checked ~ main section[data-role=reservations] {
+#tab3:checked ~ main section[data-role=employees],
+#tab3:checked ~ main section[data-role=requests] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0;
   justify-content: space-between;
 }
 #tab2:checked ~ main section:nth-of-type(2) article,
-#tab3:checked ~ main section[data-role=reservations] article {
+#tab3:checked ~ main section[data-role=employees] article,
+#tab3:checked ~ main section[data-role=requests] article {
   box-shadow: 4px 6px 6px rgba(45, 45, 45, 0.2509803922);
   padding: 1.25rem 0.75rem;
   background-color: #eaeaea;
@@ -1019,52 +1034,63 @@ main section div a:hover span {
   border-radius: 0.625rem;
 }
 #tab2:checked ~ main section:nth-of-type(2) article header,
-#tab3:checked ~ main section[data-role=reservations] article header {
+#tab3:checked ~ main section[data-role=employees] article header,
+#tab3:checked ~ main section[data-role=requests] article header {
   height: auto;
 }
 #tab2:checked ~ main section:nth-of-type(2) article header h2,
-#tab3:checked ~ main section[data-role=reservations] article header h2 {
+#tab3:checked ~ main section[data-role=employees] article header h2,
+#tab3:checked ~ main section[data-role=requests] article header h2 {
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1rem;
 }
 #tab2:checked ~ main section:nth-of-type(2) article header h2 img,
-#tab3:checked ~ main section[data-role=reservations] article header h2 img {
+#tab3:checked ~ main section[data-role=employees] article header h2 img,
+#tab3:checked ~ main section[data-role=requests] article header h2 img {
   height: 1.9rem;
 }
 #tab2:checked ~ main section:nth-of-type(2) article header p,
-#tab3:checked ~ main section[data-role=reservations] article header p {
+#tab3:checked ~ main section[data-role=employees] article header p,
+#tab3:checked ~ main section[data-role=requests] article header p {
   color: rgba(45, 45, 45, 0.6);
   font-size: 1rem;
 }
 #tab2:checked ~ main section:nth-of-type(2) article header p img,
-#tab3:checked ~ main section[data-role=reservations] article header p img {
+#tab3:checked ~ main section[data-role=employees] article header p img,
+#tab3:checked ~ main section[data-role=requests] article header p img {
   height: 1rem;
 }
 #tab2:checked ~ main section:nth-of-type(2) article section,
-#tab3:checked ~ main section[data-role=reservations] article section {
+#tab3:checked ~ main section[data-role=employees] article section,
+#tab3:checked ~ main section[data-role=requests] article section {
   padding: 0.25rem 0.75rem;
 }
 #tab2:checked ~ main section:nth-of-type(2) article section p,
-#tab3:checked ~ main section[data-role=reservations] article section p {
+#tab3:checked ~ main section[data-role=employees] article section p,
+#tab3:checked ~ main section[data-role=requests] article section p {
   margin-top: 1rem;
 }
 #tab2:checked ~ main section:nth-of-type(2) article section p img,
-#tab3:checked ~ main section[data-role=reservations] article section p img {
+#tab3:checked ~ main section[data-role=employees] article section p img,
+#tab3:checked ~ main section[data-role=requests] article section p img {
   height: 1.25rem;
 }
 #tab2:checked ~ main section:nth-of-type(2) article section p strong,
-#tab3:checked ~ main section[data-role=reservations] article section p strong {
+#tab3:checked ~ main section[data-role=employees] article section p strong,
+#tab3:checked ~ main section[data-role=requests] article section p strong {
   font-weight: 600;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer,
-#tab3:checked ~ main section[data-role=reservations] article footer {
+#tab3:checked ~ main section[data-role=employees] article footer,
+#tab3:checked ~ main section[data-role=requests] article footer {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a:first-of-type,
-#tab3:checked ~ main section[data-role=reservations] article footer a:first-of-type {
+#tab3:checked ~ main section[data-role=employees] article footer a:first-of-type,
+#tab3:checked ~ main section[data-role=requests] article footer a:first-of-type {
   border: 0.125rem solid #d4a373;
   border-radius: 0.625rem;
   display: flex;
@@ -1081,29 +1107,35 @@ main section div a:hover span {
   background-color: #eaeaea;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a:first-of-type img,
-#tab3:checked ~ main section[data-role=reservations] article footer a:first-of-type img {
+#tab3:checked ~ main section[data-role=employees] article footer a:first-of-type img,
+#tab3:checked ~ main section[data-role=requests] article footer a:first-of-type img {
   height: 1.5rem;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a:first-of-type span,
-#tab3:checked ~ main section[data-role=reservations] article footer a:first-of-type span {
+#tab3:checked ~ main section[data-role=employees] article footer a:first-of-type span,
+#tab3:checked ~ main section[data-role=requests] article footer a:first-of-type span {
   color: #eaeaea;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a:first-of-type:hover,
-#tab3:checked ~ main section[data-role=reservations] article footer a:first-of-type:hover {
+#tab3:checked ~ main section[data-role=employees] article footer a:first-of-type:hover,
+#tab3:checked ~ main section[data-role=requests] article footer a:first-of-type:hover {
   background-color: #eaeaea;
   color: #d4a373;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a:first-of-type:hover span,
-#tab3:checked ~ main section[data-role=reservations] article footer a:first-of-type:hover span {
+#tab3:checked ~ main section[data-role=employees] article footer a:first-of-type:hover span,
+#tab3:checked ~ main section[data-role=requests] article footer a:first-of-type:hover span {
   color: #d4a373;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a:first-of-type:hover,
-#tab3:checked ~ main section[data-role=reservations] article footer a:first-of-type:hover {
+#tab3:checked ~ main section[data-role=employees] article footer a:first-of-type:hover,
+#tab3:checked ~ main section[data-role=requests] article footer a:first-of-type:hover {
   background-color: #d4a373;
   color: #eaeaea;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(2),
-#tab3:checked ~ main section[data-role=reservations] article footer a:nth-of-type(2) {
+#tab3:checked ~ main section[data-role=employees] article footer a:nth-of-type(2),
+#tab3:checked ~ main section[data-role=requests] article footer a:nth-of-type(2) {
   border: 0.125rem solid #7d1d3f;
   border-radius: 0.625rem;
   display: flex;
@@ -1118,24 +1150,66 @@ main section div a:hover span {
   cursor: pointer;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(2) img,
-#tab3:checked ~ main section[data-role=reservations] article footer a:nth-of-type(2) img {
+#tab3:checked ~ main section[data-role=employees] article footer a:nth-of-type(2) img,
+#tab3:checked ~ main section[data-role=requests] article footer a:nth-of-type(2) img {
   height: 1.5rem;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(2) span,
-#tab3:checked ~ main section[data-role=reservations] article footer a:nth-of-type(2) span {
+#tab3:checked ~ main section[data-role=employees] article footer a:nth-of-type(2) span,
+#tab3:checked ~ main section[data-role=requests] article footer a:nth-of-type(2) span {
   color: #eaeaea;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(2):hover,
-#tab3:checked ~ main section[data-role=reservations] article footer a:nth-of-type(2):hover {
+#tab3:checked ~ main section[data-role=employees] article footer a:nth-of-type(2):hover,
+#tab3:checked ~ main section[data-role=requests] article footer a:nth-of-type(2):hover {
   background-color: #eaeaea;
   color: #7d1d3f;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(2):hover span,
-#tab3:checked ~ main section[data-role=reservations] article footer a:nth-of-type(2):hover span {
+#tab3:checked ~ main section[data-role=employees] article footer a:nth-of-type(2):hover span,
+#tab3:checked ~ main section[data-role=requests] article footer a:nth-of-type(2):hover span {
   color: #7d1d3f;
 }
+#tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(3),
+#tab3:checked ~ main section[data-role=employees] article footer a:nth-of-type(3),
+#tab3:checked ~ main section[data-role=requests] article footer a:nth-of-type(3) {
+  border: 0.125rem solid #003459;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1.5rem 0.75rem;
+  color: #eaeaea;
+  background-color: #003459;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(3) img,
+#tab3:checked ~ main section[data-role=employees] article footer a:nth-of-type(3) img,
+#tab3:checked ~ main section[data-role=requests] article footer a:nth-of-type(3) img {
+  height: 1.5rem;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(3) span,
+#tab3:checked ~ main section[data-role=employees] article footer a:nth-of-type(3) span,
+#tab3:checked ~ main section[data-role=requests] article footer a:nth-of-type(3) span {
+  color: #eaeaea;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(3):hover,
+#tab3:checked ~ main section[data-role=employees] article footer a:nth-of-type(3):hover,
+#tab3:checked ~ main section[data-role=requests] article footer a:nth-of-type(3):hover {
+  background-color: #eaeaea;
+  color: #003459;
+}
+#tab2:checked ~ main section:nth-of-type(2) article footer a:nth-of-type(3):hover span,
+#tab3:checked ~ main section[data-role=employees] article footer a:nth-of-type(3):hover span,
+#tab3:checked ~ main section[data-role=requests] article footer a:nth-of-type(3):hover span {
+  color: #003459;
+}
 #tab2:checked ~ main section:nth-of-type(2) article footer a[data-role=finished],
-#tab3:checked ~ main section[data-role=reservations] article footer a[data-role=finished] {
+#tab3:checked ~ main section[data-role=employees] article footer a[data-role=finished],
+#tab3:checked ~ main section[data-role=requests] article footer a[data-role=finished] {
   border: 0.125rem solid #a663cc;
   border-radius: 0.625rem;
   display: flex;
@@ -1150,43 +1224,61 @@ main section div a:hover span {
   cursor: pointer;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a[data-role=finished] img,
-#tab3:checked ~ main section[data-role=reservations] article footer a[data-role=finished] img {
+#tab3:checked ~ main section[data-role=employees] article footer a[data-role=finished] img,
+#tab3:checked ~ main section[data-role=requests] article footer a[data-role=finished] img {
   height: 1.5rem;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a[data-role=finished] span,
-#tab3:checked ~ main section[data-role=reservations] article footer a[data-role=finished] span {
+#tab3:checked ~ main section[data-role=employees] article footer a[data-role=finished] span,
+#tab3:checked ~ main section[data-role=requests] article footer a[data-role=finished] span {
   color: #eaeaea;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a[data-role=finished]:hover,
-#tab3:checked ~ main section[data-role=reservations] article footer a[data-role=finished]:hover {
+#tab3:checked ~ main section[data-role=employees] article footer a[data-role=finished]:hover,
+#tab3:checked ~ main section[data-role=requests] article footer a[data-role=finished]:hover {
   background-color: #eaeaea;
   color: #a663cc;
 }
 #tab2:checked ~ main section:nth-of-type(2) article footer a[data-role=finished]:hover span,
-#tab3:checked ~ main section[data-role=reservations] article footer a[data-role=finished]:hover span {
+#tab3:checked ~ main section[data-role=employees] article footer a[data-role=finished]:hover span,
+#tab3:checked ~ main section[data-role=requests] article footer a[data-role=finished]:hover span {
   color: #a663cc;
 }
 @media (width < 800px) {
   #tab2:checked ~ main section:nth-of-type(2) article footer,
-  #tab3:checked ~ main section[data-role=reservations] article footer {
+  #tab3:checked ~ main section[data-role=employees] article footer,
+  #tab3:checked ~ main section[data-role=requests] article footer {
     flex-direction: column;
     gap: 1rem;
   }
   #tab2:checked ~ main section:nth-of-type(2) article footer a,
-  #tab3:checked ~ main section[data-role=reservations] article footer a {
+  #tab3:checked ~ main section[data-role=employees] article footer a,
+  #tab3:checked ~ main section[data-role=requests] article footer a {
     width: auto;
   }
 }
 @media (width < 800px) {
   #tab2:checked ~ main section:nth-of-type(2),
-  #tab3:checked ~ main section[data-role=reservations] {
+  #tab3:checked ~ main section[data-role=employees],
+  #tab3:checked ~ main section[data-role=requests] {
     grid-template-columns: 1fr;
     gap: 4rem;
     margin-top: 4rem;
   }
   #tab2:checked ~ main section:nth-of-type(2) article,
-  #tab3:checked ~ main section[data-role=reservations] article {
+  #tab3:checked ~ main section[data-role=employees] article,
+  #tab3:checked ~ main section[data-role=requests] article {
     margin: 0;
+  }
+}
+
+@media (width < 1200px) {
+  #tab3:checked ~ main section[data-role=requests] footer {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  #tab3:checked ~ main section[data-role=requests] footer a {
+    width: auto;
   }
 }
 
@@ -1268,7 +1360,7 @@ span[data-role=finished] {
   background-color: #d4a373;
   color: #eaeaea;
 }
-.cancellation div a:last-of-type {
+.cancellation div a:nth-of-type(2) {
   border: 0.125rem solid #7d1d3f;
   border-radius: 0.625rem;
   display: flex;
@@ -1282,22 +1374,54 @@ span[data-role=finished] {
   font-size: 1.25rem;
   cursor: pointer;
 }
-.cancellation div a:last-of-type img {
+.cancellation div a:nth-of-type(2) img {
   height: 1.5rem;
 }
-.cancellation div a:last-of-type span {
+.cancellation div a:nth-of-type(2) span {
   color: #eaeaea;
 }
-.cancellation div a:last-of-type:hover {
+.cancellation div a:nth-of-type(2):hover {
   background-color: #eaeaea;
   color: #7d1d3f;
 }
-.cancellation div a:last-of-type:hover span {
+.cancellation div a:nth-of-type(2):hover span {
   color: #7d1d3f;
+}
+.cancellation div a:nth-of-type(3) {
+  border: 0.125rem solid #003459;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 1.5rem 0.75rem;
+  color: #eaeaea;
+  background-color: #003459;
+  font-weight: 500;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.cancellation div a:nth-of-type(3) img {
+  height: 1.5rem;
+}
+.cancellation div a:nth-of-type(3) span {
+  color: #eaeaea;
+}
+.cancellation div a:nth-of-type(3):hover {
+  background-color: #eaeaea;
+  color: #003459;
+}
+.cancellation div a:nth-of-type(3):hover span {
+  color: #003459;
 }
 @media (width < 800px) {
   .cancellation div {
     flex-direction: column-reverse;
+  }
+}
+@media (width < 800px) {
+  .cancellation img {
+    width: 100%;
   }
 }
 

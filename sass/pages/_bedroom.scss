@@ -148,6 +148,16 @@ body > a {
       }
     }
 
+    div[data-role="current-reservations"] {
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: colors.$navy-blue;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+    }
+
     @media (width < 800px) {
       flex-direction: column;
 
@@ -156,6 +166,14 @@ body > a {
         width: 100%;
 
         button {
+          width: 100%;
+        }
+      }
+
+      div[data-role="current-reservations"] {
+        margin-top: 2rem;
+        
+        img {
           width: 100%;
         }
       }

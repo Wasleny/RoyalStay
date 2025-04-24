@@ -217,7 +217,8 @@ main section div {
 }
 
 #tab2:checked ~ main section:nth-of-type(2),
-#tab3:checked ~ main section[data-role="reservations"] {
+#tab3:checked ~ main section[data-role="employees"],
+#tab3:checked ~ main section[data-role="requests"] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0;
@@ -278,6 +279,10 @@ main section div {
         @include button(colors.$burgundy);
       }
 
+      a:nth-of-type(3) {
+        @include button;
+      }
+
       a[data-role="finished"] {
         @include button(colors.$lavender);
       }
@@ -300,6 +305,19 @@ main section div {
 
     article {
       margin: 0;
+    }
+  }
+}
+
+#tab3:checked ~ main section[data-role="requests"] {
+  @media (width < 1200px) {
+    footer {
+      flex-direction: column-reverse;
+      gap: 1rem;
+
+      a {
+        width: auto;
+      }
     }
   }
 }

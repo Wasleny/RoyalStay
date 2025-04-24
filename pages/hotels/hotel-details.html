@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="icon" type="image/png" href="/images/LOGO.png">
+
+    <title>RoyalStay</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html"><img src="/images/LOGO.png" alt="Logo RoyalStay"></a>
+                </li>
+                <div>
+                    <li>
+                        <img src="/images/icons/notification.png" alt="Ícome de Notificações">
+                    </li>
+                    <li>
+                        <img src="/images/icons/message.png" alt="Ícone de Mensagem">
+                    </li>
+                    <li>
+                        <input type="checkbox" id="dropdown-toggle" hidden>
+
+                        <label for="dropdown-toggle">
+                            <img src="/images/avatars/owner.png" alt="Ícone de Perfil">
+                        </label>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="/pages/panel-owner.html">PAINEL</a></li>
+                            <li><a href="/index.html">SAIR</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="user-header">
+        <div data-role="user-info">
+            <img src="/images/icons/building.png" alt="Ícone de Usuário" />
+
+            <div data-role="user-text">
+                <strong>VILLA SERENITÀ</strong>
+            </div>
+        </div>
+
+        <span data-role="status-badge">Status do proprietário: Ativo</span>
+    </section>
+
+
+    <input type="radio" name="tabs" data-role="tab1" id="tab1" checked>
+    <input type="radio" name="tabs" data-role="tab2" id="tab2">
+    <input type="radio" name="tabs" data-role="tab3" id="tab3">
+    <input type="radio" name="tabs" data-role="tab4" id="tab4">
+
+    <nav>
+        <label for="tab1">INFORMAÇÕES</label>
+        <label for="tab2">QUARTOS</label>
+        <label for="tab3">RESERVAS</label>
+        <label for="tab4">AVALIAÇÕES</label>
+    </nav>
+
+    <main>
+        <section>
+            <div>
+                <ul>
+                    <li>
+                        <strong data-role="profile-information">Hotel: </strong>
+                        Nome do Hotel:
+                    </li>
+
+                    <li>
+                        <strong data-role="profile-information">E-mail: </strong>
+                        hotel@gmail.com
+                    </li>
+                    <li>
+                        <strong data-role="profile-information">Em funcionamento desde de:</strong>
+                    </li>
+                    <li>
+                        <strong data-role="profile-information">Telefone / Celular:</strong>
+                        +55 00 00000-0000
+                    </li>
+
+                    <li>
+                        <strong data-role="profile-information">CNPJ:</strong>
+                        XX.XXX.XXX/0001-XX
+                    </li>
+                    <li>
+                        <strong data-role="profile-information">Endereço:</strong>
+                        Nome da rua, numero - cidade-estado, país
+                    </li>
+                </ul>
+
+                <a href="#">EDITAR INFORMAÇÕES</a>
+            </div>
+        </section>
+
+        <section>
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/icons/building.png" alt="Ícone de um prédio">
+                        Suíte Garden View
+                    </h2>
+                </header>
+
+                <section>
+                    <p>
+                        <img src="/images/icons/people.png" alt="Ícone de Pessoa">
+                        <strong>Capacidade:</strong> 2 pessoas
+                    </p>
+
+                    <p>
+                        <img src="/images/icons/money.png" alt="Ícone de Dinheiro">
+                        <strong>Diária:</strong> R$ 560/noite
+                    </p>
+
+                    <p>
+                        <strong>Status: </strong>
+                        <span data-role="confirmed">Disponível</span>
+                    </p>
+                </section>
+
+                <footer>
+                    <a href="/pages/hotels/bedroom-details.html">VER DETALHES</a>
+                    <a href="/pages/hotels/bedroom-deactivation.html">DESATIVAR QUARTO</a>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/icons/building.png" alt="Ícone de um prédio">
+                        Suíte Cobre Elegance
+                    </h2>
+                </header>
+                <section>
+                    <p>
+                        <img src="/images/icons/people.png" alt="Ícone de Pessoa">
+                        <strong>Capacidade:</strong> 2 pessoas
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        <img src="/images/icons/money.png" alt="Ícone de Dinheiro">
+                        <strong>Diária:</strong> R$ 630/noite
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        <strong>Status: </strong>
+                        <span data-role="confirmed">Disponível</span>
+                    </p>
+                </section>
+                <footer>
+                    <a href="/pages/hotels/bedroom-details.html">VER DETALHES</a>
+                    <a href="/pages/hotels/bedroom-deactivation.html">DESATIVAR QUARTO</a>
+                </footer>
+            </article>
+
+
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/icons/building.png" alt="Ícone de um prédio">
+                        Suíte Smart Comfort
+                    </h2>
+                </header>
+                <section>
+                    <p>
+                        <img src="/images/icons/people.png" alt="Ícone de Pessoa">
+                        <strong>Capacidade:</strong> 2 pessoas
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        <img src="/images/icons/money.png" alt="Ícone de Dinheiro">
+                        <strong>Diária:</strong> R$ 420/noite
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        <strong>Status: </strong>
+                        <span data-role="confirmed">Disponível</span>
+                    </p>
+                </section>
+                <footer>
+                    <a href="/pages/hotels/bedroom-details.html">VER DETALHES</a>
+                    <a href="/pages/hotels/bedroom-deactivation.html">DESATIVAR QUARTO</a>
+                </footer>
+            </article>
+
+
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/icons/building.png" alt="Ícone de um prédio">
+                        Suíte Cobre Elegance
+                    </h2>
+                </header>
+                <section>
+                    <p>
+                        <img src="/images/icons/people.png" alt="Ícone de Pessoa">
+                        <strong>Capacidade:</strong> 2 pessoas
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        <img src="/images/icons/money.png" alt="Ícone de Dinheiro">
+                        <strong>Diária:</strong> R$ 630/noite
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        <strong>Status: </strong>
+                        <span data-role="confirmed">Disponível</span>
+                    </p>
+                </section>
+                <footer>
+                    <a href="/pages/hotels/bedroom-details.html">VER DETALHES</a>
+                    <a href="/pages/hotels/bedroom-deactivation.html">DESATIVAR QUARTO</a>
+                </footer>
+            </article>
+        </section>
+
+        <section data-role="requests">
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/avatars/first_requesting_guest.png" alt="Ícone de Usuário">
+                        <strong>Ana Carolina Souza</strong>
+                    </h2>
+                </header>
+
+                <section>
+                    <p>
+                        <img src="/images/icons/calendar.png" alt="Ícone de Calendário">
+                        <strong>Período:</strong> 18/04/25 a 20/04/25
+                    </p>
+                    <p>
+                        <img src="/images/icons/black_bed.png" alt="Ícone de Quarto">
+                        <strong>Quarto:</strong> Suíte Garden View
+                    </p>
+                    <p>
+                        <img src="/images/icons/black_star.png" alt="Ícone de Avaliação">
+                        <strong data-role="star-rate">Avaliação do Cliente: </strong>
+                        5 estrelas
+                    </p>
+                </section>
+
+                <footer>
+                    <a href="/pages/reservations/request.html">VER DETALHES</a>
+                    <a href="#">RECUSAR</a>
+                    <a href="#">ACEITAR</a>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/avatars/second_requesting_guest.png" alt="Ícone de Usuário">
+                        <strong>Bruno Rodrigues</strong>
+                    </h2>
+                </header>
+
+                <section>
+                    <p>
+                        <img src="/images/icons/calendar.png" alt="Ícone de Calendário">
+                        <strong>Período:</strong> 01/04/25 a 05/04/25
+                    </p>
+                    <p>
+                        <img src="/images/icons/black_bed.png" alt="Ícone de Quarto">
+                        <strong>Quarto:</strong> Suíte Cobre Elegance
+                    </p>
+                    <p>
+                        <img src="/images/icons/black_star.png" alt="Ícone de Avaliação">
+                        <strong data-role="star-rate">Avaliação do Cliente: </strong>
+                        5 estrelas
+                    </p>
+                </section>
+
+                <footer>
+                    <a href="#">VER DETALHES</a>
+                    <a href="#">RECUSAR</a>
+                    <a href="#">ACEITAR</a>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/avatars/fourth_requesting_guest.png" alt="Ícone de Usuário">
+                        <strong>João Magalhães</strong>
+                    </h2>
+                </header>
+
+                <section>
+                    <p>
+                        <img src="/images/icons/calendar.png" alt="Ícone de Calendário">
+                        <strong>Período:</strong> 12/04/25 a 13/04/25
+                    </p>
+                    <p>
+                        <img src="/images/icons/black_bed.png" alt="Ícone de Quarto">
+                        <strong>Quarto:</strong> Suíte Smart Comfort
+                    </p>
+                    <p>
+                        <img src="/images/icons/black_star.png" alt="Ícone de Avaliação">
+                        <strong data-role="star-rate">Avaliação do Cliente: </strong>
+                        4 estrelas
+                    </p>
+                </section>
+
+                <footer>
+                    <a href="/pages/reservations/request.html">VER DETALHES</a>
+                    <a href="#">RECUSAR</a>
+                    <a href="#">ACEITAR</a>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <h2>
+                        <img src="/images/avatars/third_requesting_guest.png" alt="Ícone de Usuário">
+                        <strong>Maria Ferreira</strong>
+                    </h2>
+                </header>
+
+                <section>
+                    <p>
+                        <img src="/images/icons/calendar.png" alt="Ícone de Calendário">
+                        <strong>Período:</strong> 19/04/25 a 21/04/25
+                    </p>
+                    <p>
+                        <img src="/images/icons/black_bed.png" alt="Ícone de Quarto">
+                        <strong>Quarto:</strong> Suíte Garden View
+                    </p>
+                    <p>
+                        <img src="/images/icons/black_star.png" alt="Ícone de Avaliação">
+                        <strong data-role="star-rate">Avaliação do Cliente: </strong>
+                        4.8 estrelas
+                    </p>
+                </section>
+
+                <footer>
+                    <a href="#">VER DETALHES</a>
+                    <a href="#">RECUSAR</a>
+                    <a href="#">ACEITAR</a>
+                </footer>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <header>
+                    <p>
+                        <img src="/images/icons/star.png" alt="Ícone de estrela">
+                        <strong>5 estrelas</strong>
+                        para
+                        <strong>Suíte Garden View - Villa Serenità</strong>
+                    </p>
+                </header>
+
+                <blockquote>
+                    <p>“Adorei o quarto, o hotel também. Fui super bem atendida e pude aproveitar bastante minhas
+                        férias.”</p>
+                </blockquote>
+
+                <footer>
+                    <small>postado em 00/00/00 às 00h00min</small>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <p>
+                        <img src="/images/icons/star.png" alt="Ícone de estrela">
+                        <strong>5 estrelas</strong>
+                        para
+                        <strong>Suíte Garden View - Villa Serenità</strong>
+                    </p>
+                </header>
+
+                <blockquote>
+                    <p>“Adorei o quarto, o hotel também. Fui super bem atendida e pude aproveitar bastante minhas
+                        férias.”</p>
+                </blockquote>
+
+                <footer>
+                    <small>postado em 00/00/00 às 00h00min</small>
+                </footer>
+            </article>
+
+            <article>
+                <header>
+                    <p>
+                        <img src="/images/icons/star.png" alt="Ícone de estrela">
+                        <strong>5 estrelas</strong>
+                        para
+                        <strong>Suíte Garden View - Villa Serenità</strong>
+                    </p>
+                </header>
+
+                <blockquote>
+                    <p>“Adorei o quarto, o hotel também. Fui super bem atendida e pude aproveitar bastante minhas
+                        férias.”</p>
+                </blockquote>
+
+                <footer>
+                    <small>postado em 00/00/00 às 00h00min</small>
+                </footer>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <small>RoyalStay</small>
+        <small>&copy; 2025 - Todos os direitos reservados</small>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Newsletter</a>
+                </li>
+                <li>
+                    <a href="#">Quem Somos</a>
+                </li>
+
+                <li>
+                    <a href="#">Central de Atendimento</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Uso</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Parceria</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Privacidade</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Cancelamento</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Inativação</a>
+                </li>
+            </ul>
+        </nav>
+
+        <dl>
+            <dt>Horário de Atendimento</dt>
+            <dd>De segunda à sexta, das <time datetime="08:30">8h30</time> às <time datetime="18:00">18h</time></dd>
+        </dl>
+
+        <p><small>DESENVOLVIDO POR LAVÍNIA MONTEIRO &amp; WASLENY PIMENTA</small></p>
+    </footer>
+</body>
+
+</html>
