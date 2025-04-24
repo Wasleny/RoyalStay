@@ -300,8 +300,8 @@ main section div {
 
   @media (width < 800px) {
     grid-template-columns: 1fr;
-    gap: 4rem;
-    margin-top: 4rem;
+    gap: 3rem;
+    margin-top: 2rem;
 
     article {
       margin: 0;
@@ -336,4 +336,29 @@ span[data-role="canceled"] {
 
 span[data-role="finished"] {
   color: colors.$lavender;
+}
+
+div[data-role="add-button"] {
+  grid-column: 1 / -1;
+  margin: 0 3.75rem;
+  width: auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background: none;
+  box-shadow: none;
+
+  a {
+    @include button;
+    
+    margin: 0;
+  }
+
+  @media (width < 800px) {
+    justify-content: center;
+
+    a {
+      width: 100%;
+    }
+  }
 }
