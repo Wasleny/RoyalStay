@@ -727,55 +727,72 @@ section[data-role=rates] article[data-role=rate] p[data-role=star-rate] > span ~
   opacity: 0.6;
   cursor: not-allowed;
 }
-.register form div[data-role=user-type] {
+.register form div[data-role=radio-type] {
   display: flex;
   justify-content: start;
   gap: 4rem;
 }
-.register form div[data-role=user-type] div {
+.register form div[data-role=radio-type] div {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.register form div[data-role=user-type] div input[type=radio] {
+.register form div[data-role=radio-type] div input[type=radio] {
   height: 1rem;
 }
 @media (width < 800px) {
-  .register form div[data-role=user-type] {
+  .register form div[data-role=radio-type] {
     flex-direction: column;
     gap: 2rem;
     align-items: start;
   }
 }
-.register form div[data-role=data] {
+.register form div[data-role=data],
+.register form div[data-role=data-hotel],
+.register form div[data-role=data-phone-hotel] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-top: 2rem;
 }
-.register form div[data-role=data] div {
+.register form div[data-role=data] div,
+.register form div[data-role=data-hotel] div,
+.register form div[data-role=data-phone-hotel] div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   width: 100%;
 }
-.register form div[data-role=data] div input, .register form div[data-role=data] div select {
+.register form div[data-role=data] div input,
+.register form div[data-role=data] div select,
+.register form div[data-role=data-hotel] div input,
+.register form div[data-role=data-hotel] div select,
+.register form div[data-role=data-phone-hotel] div input,
+.register form div[data-role=data-phone-hotel] div select {
   width: auto;
   padding: 0 1rem;
 }
-.register form div[data-role=data] div label span {
+.register form div[data-role=data] div label span,
+.register form div[data-role=data-hotel] div label span,
+.register form div[data-role=data-phone-hotel] div label span {
   color: #f00;
 }
 @media (width < 800px) {
-  .register form div[data-role=data] {
+  .register form div[data-role=data],
+  .register form div[data-role=data-hotel],
+  .register form div[data-role=data-phone-hotel] {
     grid-template-columns: 1fr;
   }
 }
-.register form div[data-role=data]:nth-child(3), .register form div[data-role=data]:nth-child(7) {
+.register form div[data-role=data]:nth-child(3),
+.register form div[data-role=data]:nth-child(7),
+.register form div[data-role=data-hotel] {
   grid-template-columns: 1fr 1fr 1fr;
 }
 @media (width < 800px) {
-  .register form div[data-role=data]:nth-child(3), .register form div[data-role=data]:nth-child(7) {
+  .register form div[data-role=data]:nth-child(3),
+  .register form div[data-role=data]:nth-child(7),
+  .register form div[data-role=data-hotel] {
     grid-template-columns: 1fr;
   }
 }
@@ -1596,6 +1613,16 @@ img[data-role=employee-avatar] {
     width: 100%;
     height: auto;
   }
+}
+
+.qr-code {
+  text-align: center;
+  margin: 2rem 0;
+}
+.qr-code > p {
+  width: 50%;
+  margin: 0 auto;
+  color: #003459;
 }
 
 /*# sourceMappingURL=styles.css.map */

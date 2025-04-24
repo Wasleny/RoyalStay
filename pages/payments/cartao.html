@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" type="image/png" href="images/LOGO.png">
+
+    <title>RoyalStay</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html"><img src="/images/LOGO.png" alt="Logo RoyalStay"></a>
+                </li>
+                <div>
+                    <li>
+                        <input type="checkbox" id="dropdown-toggle" hidden>
+
+                        <label for="dropdown-toggle">
+                            <img src="/images/avatars/owner.png" alt="Ícone de Perfil">
+                        </label>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="/pages/panel-owner.html">PAINEL</a></li>
+                            <li><a href="/index.html">SAIR</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="register">
+        <h1>ÁREA DE PAGAMENTO</h1>
+
+        <form action="" method="get">
+            <div data-role="radio-type">
+                <div>
+                    <input type="radio" name="payment_type" value="pix" disabled>
+                    <label for="payment_type">PIX</label>
+                </div>
+                <div>
+                    <input type="radio" name="payment_type" id="payment_type" value="card">
+                    <label for="payment_type">CARTÃO</label>
+                </div>
+            </div>
+
+            <div data-role="data">
+                <div>
+                    <label for="name">NOME COMPLETO <span>*</span></label>
+                    <input type="name" name="name">
+                </div>
+
+                <div>
+                    <label for="email">E-MAIL <span>*</span></label>
+                    <input type="email" name="email">
+                </div>
+            </div>
+
+            <div data-role="data">
+                <div>
+                    <label for="birthday">DATA DE NASCIMENTO</label>
+                    <input type="date" name="birthday" max="2007-04-15">
+                </div>
+
+                <div>
+                    <label for="phone">TELEFONE / CELULAR</label>
+                    <input type="tel" name="phone">
+                </div>
+
+                <div>
+                    <label for="whatsapp">O Nº INFORMADO É WHATSAPP?</label>
+                    <select name="whatsapp">
+                        <option value=""></option>
+                        <option value="sim">SIM</option>
+                        <option value="não">NÃO</option>
+                    </select>
+                </div>
+            </div>
+
+            <div data-role="data">
+                <div>
+                    <label for="whatsapp">TIPO DE DOCUMENTO</label>
+                    <select name="whatsapp">
+                        <option value=""></option>
+                        <option value="passaporte">PASSAPORTE</option>
+                        <option value="cpf">CPF</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="document">DOCUMENTO</label>
+                    <input type="text" name="document">
+                </div>
+                <div>
+                    <label for="adress">CEP</label>
+                    <input type="text" name="adress">
+                </div>
+                <div>
+                    <label for="adress">ENDEREÇO</label>
+                    <input type="text" name="adress">
+                </div>
+            </div>   
+            <div data-role="data">
+                <div>
+                    <label for="card-number">NÚMERO DO CARTÃO<span>*</span></label>
+                    <input type="text" name="card-number">
+                </div>
+
+                <div>
+                    <label for="due-date">VENCIMENTO<span>*</span></label>
+                    <input type="text" name="due-date">
+                </div>
+                <div>
+                    <label for="cvv">CVV<span>*</span></label>
+                    <input type="text" name="cvv">
+                </div>
+                <div>
+                    <label for="installments">PARCELAMENTO<span>*</span></label>
+                    <select name="installments">
+                        <option value=""></option>
+                        <option value="1x">1x</option>
+                        <option value="2x">2x</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="installments">TIPO DE CARTÃO<span>*</span></label>
+                    <select name="installments">
+                        <option value=""></option>
+                        <option value="debito">DÉBITO</option>
+                        <option value="credito">CRÉDITO</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="installments">NOME DO TITULAR DO CARTÃO<span>*</span></label>
+                    <input type="name" name="name">
+                </div>
+            </div>   
+            
+            
+            <button type="submit">EFETUAR PAGAMENTO</button>
+        </form>
+    </section>
+
+    <footer>
+        <small>RoyalStay</small>
+        <small>&copy; 2025 - Todos os direitos reservados</small>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Newsletter</a>
+                </li>
+                <li>
+                    <a href="#">Quem Somos</a>
+                </li>
+
+                <li>
+                    <a href="#">Central de Atendimento</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Uso</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Parceria</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Privacidade</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Cancelamento</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Inativação</a>
+                </li>
+            </ul>
+        </nav>
+
+        <dl>
+            <dt>Horário de Atendimento</dt>
+            <dd>De segunda à sexta, das <time datetime="08:30">8h30</time> às <time datetime="18:00">18h</time></dd>
+        </dl>
+
+        <p><small>DESENVOLVIDO POR LAVÍNIA MONTEIRO &amp; WASLENY PIMENTA</small></p>
+    </footer>
+</body>
+
+</html>

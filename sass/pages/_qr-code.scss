@@ -1,0 +1,12 @@
+@use "../base/colors" as colors;
+
+.qr-code {
+    text-align: center;
+    margin: 2rem 0;
+
+    & > p {
+        width: 50%;
+        margin: 0 auto;
+        color: colors.$navy-blue;
+    }
+}
