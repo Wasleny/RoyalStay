@@ -58,8 +58,8 @@
     }
 
     div[data-role="data"],
-    div[data-role="data-hotel"],
-    div[data-role="data-phone-hotel"] {
+    div[data-role="data-grid-3"],
+    div[data-role="data-grid-2"] {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
@@ -89,7 +89,7 @@
 
     div[data-role="data"]:nth-child(3),
     div[data-role="data"]:nth-child(7),
-    div[data-role="data-hotel"] {
+    div[data-role="data-grid-3"] {
       grid-template-columns: 1fr 1fr 1fr;
 
       @media (width < 800px) {

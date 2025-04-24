@@ -39,12 +39,7 @@
     <section class="register">
         <h1>CADASTRAR NOVO FUNCIONÁRIO</h1>
 
-        <form action="/pages/panel.html" method="get">
-
-
-            <div data-role="radio-type">
-            </div>
-
+        <form action="/pages/panel-owner.html" method="get">
             <div data-role="data">
                 <div>
                     <label for="name">NOME COMPLETO <span>*</span></label>
@@ -57,7 +52,7 @@
                 </div>
             </div>
 
-            <div data-role="data">
+            <div data-role="data-grid-3">
                 <div>
                     <label for="birthday">DATA DE NASCIMENTO</label>
                     <input type="date" name="birthday" max="2007-04-15">
@@ -78,7 +73,7 @@
                 </div>
             </div>
 
-            <div data-role="data">
+            <div data-role="data-grid-2">
                 <div>
                     <label for="whatsapp">TIPO DE DOCUMENTO</label>
                     <select name="whatsapp">
@@ -130,7 +125,7 @@
                 </div>
             </div>
 
-            <div data-role="data">
+            <div data-role="data-grid-3">
                 <div>
                     <label for="street">RUA</label>
                     <input type="text" name="street">
@@ -147,7 +142,7 @@
                 </div>
             </div>
 
-            <div data-role="data">
+            <div data-role="data-grid-2">
                 <div>
                     <label for="work">CARGO <span>*</span></label>
                     <select name="work">
@@ -162,6 +157,8 @@
                     <label for="admissão">DATA DE ADMISSÃO</label>
                     <input type="date" name="admissão" max="2007-04-15">
                 </div>
+            </div>
+            <div data-role="data">
                 <div>
                     <label for="place">DEPARTAMENTO <span>*</span></label>
                     <select name="place">
