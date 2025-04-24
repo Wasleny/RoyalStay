@@ -748,16 +748,16 @@ section[data-role=rates] article[data-role=rate] p[data-role=star-rate] > span ~
   }
 }
 .register form div[data-role=data],
-.register form div[data-role=data-hotel],
-.register form div[data-role=data-phone-hotel] {
+.register form div[data-role=data-grid-3],
+.register form div[data-role=data-grid-2] {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin-top: 2rem;
 }
 .register form div[data-role=data] div,
-.register form div[data-role=data-hotel] div,
-.register form div[data-role=data-phone-hotel] div {
+.register form div[data-role=data-grid-3] div,
+.register form div[data-role=data-grid-2] div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -765,34 +765,34 @@ section[data-role=rates] article[data-role=rate] p[data-role=star-rate] > span ~
 }
 .register form div[data-role=data] div input,
 .register form div[data-role=data] div select,
-.register form div[data-role=data-hotel] div input,
-.register form div[data-role=data-hotel] div select,
-.register form div[data-role=data-phone-hotel] div input,
-.register form div[data-role=data-phone-hotel] div select {
+.register form div[data-role=data-grid-3] div input,
+.register form div[data-role=data-grid-3] div select,
+.register form div[data-role=data-grid-2] div input,
+.register form div[data-role=data-grid-2] div select {
   width: auto;
   padding: 0 1rem;
 }
 .register form div[data-role=data] div label span,
-.register form div[data-role=data-hotel] div label span,
-.register form div[data-role=data-phone-hotel] div label span {
+.register form div[data-role=data-grid-3] div label span,
+.register form div[data-role=data-grid-2] div label span {
   color: #f00;
 }
 @media (width < 800px) {
   .register form div[data-role=data],
-  .register form div[data-role=data-hotel],
-  .register form div[data-role=data-phone-hotel] {
+  .register form div[data-role=data-grid-3],
+  .register form div[data-role=data-grid-2] {
     grid-template-columns: 1fr;
   }
 }
 .register form div[data-role=data]:nth-child(3),
 .register form div[data-role=data]:nth-child(7),
-.register form div[data-role=data-hotel] {
+.register form div[data-role=data-grid-3] {
   grid-template-columns: 1fr 1fr 1fr;
 }
 @media (width < 800px) {
   .register form div[data-role=data]:nth-child(3),
   .register form div[data-role=data]:nth-child(7),
-  .register form div[data-role=data-hotel] {
+  .register form div[data-role=data-grid-3] {
     grid-template-columns: 1fr;
   }
 }
