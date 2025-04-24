@@ -1585,4 +1585,17 @@ div[data-role=add-button] a:hover span {
   }
 }
 
+img[data-role=employee-avatar] {
+  margin: 2rem auto 0;
+  display: block;
+  height: 10rem;
+  width: auto;
+}
+@media (width < 500px) {
+  img[data-role=employee-avatar] {
+    width: 100%;
+    height: auto;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
