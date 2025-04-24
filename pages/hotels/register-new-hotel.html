@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" type="image/png" href="images/LOGO.png">
+
+    <title>RoyalStay</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html"><img src="/images/LOGO.png" alt="Logo RoyalStay"></a>
+                </li>
+                <div>
+                    <li>
+                        <input type="checkbox" id="dropdown-toggle" hidden>
+
+                        <label for="dropdown-toggle">
+                            <img src="/images/avatars/owner.png" alt="Ícone de Perfil">
+                        </label>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="/pages/panel-owner.html">PAINEL</a></li>
+                            <li><a href="/index.html">SAIR</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="register">
+        <h1>CADASTRAR NOVO HOTEL</h1>
+
+        <form action="/pages/panel.html" method="get">
+            <div data-role="data">
+                <div>
+                    <label for="name">NOME DO PROPRIETÁRIO <span>*</span></label>
+                    <input type="name" name="name">
+                </div>
+
+                <div>
+                    <label for="email">EMAIL <span>*</span></label>
+                    <input type="email" name="email">
+                </div>
+            </div>
+            <div data-role="data-hotel">
+                <div>
+                    <label for="hotel">NOME DO HOTEL <span>*</span></label>
+                    <input type="text" name="hotel">
+                </div>
+                <div>
+                    <label for="place">ESTRELAS <span>*</span></label>
+                    <select name="place">
+                        <option value=""></option>
+                        <option value="uma">1 ESTRELAS</option>
+                        <option value="duas">2 ESTRELAS</option>
+                        <option value="tres">3 ESTRELAS</option>
+                        <option value="quatro">4 ESTRELAS</option>
+                        <option value="quatro">5 ESTRELAS</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="document">CNPJ</label>
+                    <input type="text" name="document">
+                </div>
+            </div>
+            <div data-role="data-phone-hotel">
+                <div>
+                    <label for="tel">TELEFONE/CELULAR</label>
+                    <input type="text" name="tel">
+                </div>
+                <div>
+                    <label for="whatsapp">O Nº INFORMADO É WHATSAPP?</label>
+                    <select name="whatsapp">
+                        <option value=""></option>
+                        <option value="sim">SIM</option>
+                        <option value="não">NÃO</option>
+                    </select>
+                </div>
+            </div>
+            <div data-role="data">
+                <div>
+                    <label for="country">PAÍS</label>
+                    <select name="country">
+                        <option value=""></option>
+                        <option value="brasil">BRASIL</option>
+                        <option value="eua">EUA</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="state">ESTADO</label>
+                    <select name="state">
+                        <option value=""></option>
+                        <option value="mg">MG</option>
+                        <option value="sp">SP</option>
+                    </select>
+                </div>
+            </div>
+
+            <div data-role="data">
+                <div>
+                    <label for="city">CIDADE</label>
+                    <select name="city">
+                        <option value=""></option>
+                        <option value="vga">Varginha</option>
+                        <option value="bh">Belo Horizonte</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep">
+                </div>
+            </div>
+
+            <div data-role="data">
+                <div>
+                    <label for="street">RUA</label>
+                    <input type="text" name="street">
+                </div>
+
+                <div>
+                    <label for="number">NÚMERO</label>
+                    <input type="text" name="number">
+                </div>
+
+                <div>
+                    <label for="complement">COMPLEMENTO</label>
+                    <input type="text" name="complement">
+                </div>
+            </div>
+
+            <button type="submit">CADASTRAR</button>
+        </form>
+    </section>
+
+    <footer>
+        <small>RoyalStay</small>
+        <small>&copy; 2025 - Todos os direitos reservados</small>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Newsletter</a>
+                </li>
+                <li>
+                    <a href="#">Quem Somos</a>
+                </li>
+
+                <li>
+                    <a href="#">Central de Atendimento</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Uso</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Parceria</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Privacidade</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Cancelamento</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Inativação</a>
+                </li>
+            </ul>
+        </nav>
+
+        <dl>
+            <dt>Horário de Atendimento</dt>
+            <dd>De segunda à sexta, das <time datetime="08:30">8h30</time> às <time datetime="18:00">18h</time></dd>
+        </dl>
+
+        <p><small>DESENVOLVIDO POR LAVÍNIA MONTEIRO &amp; WASLENY PIMENTA</small></p>
+    </footer>
+</body>
+
+</html>

@@ -35,7 +35,7 @@
       cursor: not-allowed;
     }
 
-    div[data-role="user-type"] {
+    div[data-role="radio-type"] {
       display: flex;
       justify-content: start;
       gap: 4rem;
@@ -50,14 +50,16 @@
         }
       }
 
-      @media(width < 800px) {
+      @media (width < 800px) {
         flex-direction: column;
         gap: 2rem;
         align-items: start;
       }
     }
 
-    div[data-role="data"] {
+    div[data-role="data"],
+    div[data-role="data-hotel"],
+    div[data-role="data-phone-hotel"] {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
@@ -69,7 +71,8 @@
         gap: 0.5rem;
         width: 100%;
 
-        input, select {
+        input,
+        select {
           width: auto;
           padding: 0 1rem;
         }
@@ -79,15 +82,17 @@
         }
       }
 
-      @media(width < 800px) {
+      @media (width < 800px) {
         grid-template-columns: 1fr;
       }
     }
 
-    div[data-role="data"]:nth-child(3), div[data-role="data"]:nth-child(7) {
+    div[data-role="data"]:nth-child(3),
+    div[data-role="data"]:nth-child(7),
+    div[data-role="data-hotel"] {
       grid-template-columns: 1fr 1fr 1fr;
 
-      @media(width < 800px) {
+      @media (width < 800px) {
         grid-template-columns: 1fr;
       }
     }

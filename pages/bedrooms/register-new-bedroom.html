@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" type="image/png" href="images/LOGO.png">
+
+    <title>RoyalStay</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index.html"><img src="/images/LOGO.png" alt="Logo RoyalStay"></a>
+                </li>
+                <div>
+                    <li>
+                        <input type="checkbox" id="dropdown-toggle" hidden>
+
+                        <label for="dropdown-toggle">
+                            <img src="/images/avatars/owner.png" alt="Ícone de Perfil">
+                        </label>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="/pages/panel-owner.html">PAINEL</a></li>
+                            <li><a href="/index.html">SAIR</a></li>
+                        </ul>
+                    </li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="register">
+        <h1>CADASTRAR NOVO QUARTO</h1>
+
+        <form action="/pages/hotels/hotel-details.html" method="get">
+            <div data-role="data">
+                <div>
+                    <label for="hotel">HOTEL <span>*</span></label>
+                    <input type="text" name="hotel">
+                </div>
+                <div>
+                    <label for="value">VALOR PER NOITE <span>*</span></label>
+                    <input type="text" name="value">
+                </div>
+            </div>
+            <div data-role="data">
+                <div>
+                    <label for="addition">O VALOR TEM ACRÉSCIMO DE ACORDO COM A TEMPORADA? <span>*</span></label>
+                    <select name="addition">
+                        <option value=""></option>
+                        <option value="sim">SIM</option>
+                        <option value="não">NÃO</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="percentage">MUDANÇA PERCENTUAL NO VALOR DE ACORDO COM AS DATAS</label>
+                    <select name="percentage">
+                        <option value=""></option>
+                        <option value="10">10%</option>
+                        <option value="20">20%</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="period">SELECIONE AS DATAS EM QUE O VALOR DEVE SER ALTERADO</label>
+                    <select name="period">
+                        <option value=""></option>
+                        <option value="abril">ABRIL</option>
+                        <option value="maio">MAIO</option>
+                    </select>
+                </div>
+            </div>
+            <div data-role="data">
+                <div>
+                    <label for="room-name">NOME DO QUARTO <span>*</span></label>
+                    <input type="text" name="room-name">
+                </div>
+                <div>
+                    <label for="bedroom-type">TIPO DE QUARTO <span>*</span></label>
+                    <select name="bedroom-type">
+                        <option value=""></option>
+                        <option value="suíte casal">SUÍTE CASAL</option>
+                        <option value="suíte solteiro">SUÍTE SOLTEIRO</option>
+                    </select>
+                </div>
+            </div>
+            <div data-role="data">
+                <div>
+                    <label for="description">DESCRIÇÃO <span>*</span></label>
+                    <input type="text" name="description">
+                </div>
+                <div>
+                    <label for="capacity">CAPACIDADE <span>*</span></label>
+                    <select name="capacity">
+                        <option value=""></option>
+                        <option value="uma pessoa">1 PESSOA</option>
+                        <option value="duas pessoas">2 PESSOAS</option>
+                    </select>
+                </div>
+            </div>
+            <div data-role="data">
+                <div>
+                    <label for="amenities">COMODIDADES <span>*</span></label>
+                    <input type="text" name="amenities">
+                </div>
+                <div>
+                    <label for="location">LOCALIZAÇÃO <span>*</span></label>
+                    <input type="text" name="location">
+                </div>
+            </div>
+
+            <button type="submit">CADASTRAR</button>
+        </form>
+    </section>
+
+    <footer>
+        <small>RoyalStay</small>
+        <small>&copy; 2025 - Todos os direitos reservados</small>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Newsletter</a>
+                </li>
+                <li>
+                    <a href="#">Quem Somos</a>
+                </li>
+
+                <li>
+                    <a href="#">Central de Atendimento</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Uso</a>
+                </li>
+
+                <li>
+                    <a href="#">Termos de Parceria</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Privacidade</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Cancelamento</a>
+                </li>
+
+                <li>
+                    <a href="#">Política de Inativação</a>
+                </li>
+            </ul>
+        </nav>
+
+        <dl>
+            <dt>Horário de Atendimento</dt>
+            <dd>De segunda à sexta, das <time datetime="08:30">8h30</time> às <time datetime="18:00">18h</time></dd>
+        </dl>
+
+        <p><small>DESENVOLVIDO POR LAVÍNIA MONTEIRO &amp; WASLENY PIMENTA</small></p>
+    </footer>
+</body>
+
+</html>
